@@ -7,11 +7,12 @@ var hyObjRdo = ""; //答案按钮
 var hyQName = ""; //问题名称
 var hyQAns = ""; //问题答案
 //核心循环
-for(i = 0; 1 < 100; i += 1)
+//for(i = 0; 1 < 100; i += 1)
+for(i = 0; 1 < 2; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ");
-  alert(hyQName[0]);
+  alert(hyQName[2]);
 };
 //结束
 
