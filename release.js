@@ -12,7 +12,7 @@ for(i = 0; 1 < 100; 1 += 1)
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ");
   hyQName = hyQName[2].split("\\r?\\n");
-  alert(hyQName[2]);
+  alert(hyQName[0]);
 };
 //结束
 
