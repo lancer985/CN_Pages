@@ -14,6 +14,7 @@ for(i = 0; i < 2; i += 1)
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ", 3);
   hyQName = hyQName[2].substring(0, hyQName[2].length - 12)
+  alert(hyQBank(""));
   hyQAns = hyQBank(hyQName);
 };
 //结束
@@ -21,5 +22,5 @@ for(i = 0; i < 2; i += 1)
 //题库
 function hyQBank(hyQ)
 {
-  
+  return "yes!";
 };
