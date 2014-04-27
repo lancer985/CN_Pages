@@ -10,7 +10,8 @@ var hyQAns = ""; //问题答案
 for(i = 0; 1 < 100; 1 += 1)
 {
   hyObjList = document.getElementById("l_" + i);
-  alert(hyObjList.innerHTML);
+  hyQName = hyObjList.innerHTML.split(" ");
+  alert(hyQName[1]);
 };
 //结束
 
