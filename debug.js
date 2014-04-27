@@ -1,5 +1,6 @@
 //V0.0
 //启动
+alert("Bilibili自动答题脚本 V0.0 \n最后更新：2014.04.27 \n按确定开始执行。");
 //
 var hyObjList = ""; //问题的list
 var hyObjRdo = ""; //答案按钮
