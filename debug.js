@@ -14,7 +14,7 @@ for(i = 0; i < 2; i += 1)
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ", 3);
   hyQName = hyQName[2].substring(0, hyQName.length - 5)
-  alert(hyQName);
+  alert("\"" + hyQName + "\"");
 };
 //结束
 
