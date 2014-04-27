@@ -13,8 +13,7 @@ for(i = 0; i < 2; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ", 3);
-  alert(hyQName);
-  hyQName = hyQName[2].substring(0, hyQName.length - 5)
+  hyQName = hyQName[1].substring(0, hyQName.length - 5)
   alert("\"" + hyQName + "\"");
 };
 //结束
