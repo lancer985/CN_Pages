@@ -12,8 +12,9 @@ var hyQAns = ""; //问题答案
 for(i = 0; 1 < 2; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
-  hyQName = hyObjList.innerHTML.split(" ");
-  alert(hyQName[2]);
+  hyQName = hyObjList.innerHTML.split(" ", 3);
+  hyQName = hyQName[2].subString(0, hyQName.length - 5)
+  alert(hyQName);
 };
 //结束
 
