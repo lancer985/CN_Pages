@@ -11,7 +11,6 @@ for(i = 0; 1 < 100; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ");
-  hyQName = hyQName[2].split(System.getProperty("line.separator"));
   alert(hyQName[0]);
 };
 //结束
