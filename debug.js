@@ -13,8 +13,8 @@ var hyNFCounter = 0 //没找到数量
 //核心循环
 for(i = 0; i < 100; i += 1)
 {
-  //try
-  //{
+  try
+  {
   //
   hyObjList = document.getElementById("l_" + i);
   hyQList = hyObjList.innerHTML.split(">");
@@ -36,9 +36,9 @@ for(i = 0; i < 100; i += 1)
     hyNFCounter += 1;
   };
   //
-  //}catch(hyEX){
-  //  alert("系统错误： \n" + hyEX)
-  //};
+  }catch(hyEX){
+    alert("系统错误： \n" + hyEX)
+  };
 };
 //结束
 alert("脚本结束，有" + hyNFCounter + "道题没找到。 \n请您检查后提交。 \n欢迎您加入我们的讨论群一起讨论完善这个脚本！ \n我们的群号：204524182");
@@ -46,7 +46,7 @@ alert("脚本结束，有" + hyNFCounter + "道题没找到。 \n请您检查后
 function hyQBank(hyQ)
 {
 //题库开始
-return "花泽香菜"; //测试
+
 //未找到数据
 return "hyErrNotFound";
 //题库结束
