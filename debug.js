@@ -33,10 +33,8 @@ for(i = 0; i < 2; i += 1)
 //结束
 
 //题库
-/*题库说明：
-格式如下：
-if(hyQ == "题目"){return "答案");
-*/
+//题库格式：
+//if(hyQ == "题目"){return "答案");
 function hyQBank(hyQ)
 {
 //题库开始
