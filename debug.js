@@ -14,7 +14,7 @@ for(i = 0; i < 2; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
   hyQList = hyObjList.innerHTML.split(">");
-  hyQName = hyQName[3].split("<");
+  hyQName = hyQList[3].split("<");
   hyQName = hyQName[0].substring(1, hyQName[0].length - 8);
   alert("\"" + hyQName + "\""); //测试
   hyQAns = hyQBank(hyQName);
@@ -23,7 +23,7 @@ for(i = 0; i < 2; i += 1)
     for(ii = 0; i < 4; i += 1)
     {
       alert(hyQList); //测试
-      hyQChoice = hyQChoice[1].split("<");
+      hyQChoice = hyQList[4].split("<");
       hyQChoice = hyQChoice[0].substring(1, hyQChoice.length - 2);
       alert("\"" + hyQChoice + "\""); //测试
     };
