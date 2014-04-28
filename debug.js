@@ -16,6 +16,7 @@ for(i = 0; i < 12; i += 1)
   hyQName = hyObjList.innerHTML.split(" ", 3);
   hyQName = hyQName[2].substring(0, hyQName[2].length - 12)
   hyQAns = hyQBank(hyQName);
+  alert(hyQName);
   for(ii = 0; i < 4; i += 1) //读取选项
   {
     hyObjRdo = document.getElementById("rdo" + i + ii);
