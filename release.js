@@ -1,15 +1,14 @@
-//V0.0
 //启动
-alert("Bilibili自动答题脚本 V1.0 \n题库题数：6（魂淡们，赶紧帮我收集啊！） \n最后更新：2014.04.27 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
+alert("Bilibili自动答题脚本 V1.1 \n题库题数：6（魂淡们，赶紧帮我收集啊！） \n最后更新：2014.04.27 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
 //
-var hyObjList = ""; //问题的list
+var hyObjList = ""; //问题object
 //
-var hyQList = ""; //问题object的innerHTML缓冲
+var hyQList = ""; //问题object的innerHTML
 var hyQName = ""; //问题名称
-var hyQAns = ""; //问题答案
+var hyQAns = ""; //返回的答案
 var hyQChoice = ""; //选项名称
 //
-var hyNFCounter = 0 //没找到数量
+var hyNFCounter = 0 //没找到计数器
 //核心循环
 for(i = 0; i < 100; i += 1)
 {
@@ -37,7 +36,7 @@ for(i = 0; i < 100; i += 1)
   };
   //
   }catch(hyEX){
-    alert("系统错误： \n" + hyEX)
+    alert("系统错误： \n" + hyEX);
   };
 };
 //结束
@@ -45,7 +44,7 @@ alert("自动答题结束，有" + hyNFCounter + "道题没找到…… \n请您
 //题库 - 格式（特殊字符用“\”注释）：if(hyQ == "题目"){return "答案");
 function hyQBank(hyQ)
 {
-//题库开始
+//-----题库开始-----
 
 //6道 - 【群主】？（1043201997）提供 - 2014.04.28
 if(hyQ == "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？"){return "三个月"};
@@ -58,6 +57,7 @@ if(hyQ == "团战可以输，\_\_\_\_必须死？"){return "提莫"};
 //0道 - 雨宫优子（352275201）提供 - 2014.04.27
 //debug中
 
+//-----题库结束-----
 //未找到数据
 return "hyErrNotFound";
 //题库结束
