@@ -25,7 +25,7 @@ for(i = 0; i < 2; i += 1)
     {
       hyQChoice = hyQList[6 + i * 3].split("<");
       hyQChoice = hyQChoice[0].substring(0, hyQChoice[0].length - 9);
-      if(hyQChoise == hyQAns)
+      if(hyQChoice == hyQAns)
       {
         $('#rdo' + i + ii).attr('checked', 'checked');
       };
