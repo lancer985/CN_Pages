@@ -15,8 +15,8 @@ for(i = 0; i < 2; i += 1)
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(">");
   hyQName = hyQName[3].split("<");
-  hyQName = hyQName[0].substring(0, hyQName[0].length - 8);
-  alert("\"" + hyQName + "\"")
+  hyQName = hyQName[0].substring(1, hyQName[0].length - 8);
+  alert("\"" + hyQName + "\""); //测试
   hyQAns = hyQBank(hyQName);
   if(hyQAns != "hyErrNotFound")
   {
@@ -26,7 +26,7 @@ for(i = 0; i < 2; i += 1)
       hyQChoise = hyObjRdo.innerHTML.split(">");
       hyQChoise = hyQChoise[1].split("<");
       hyQChoise = hyQChoise[0].substring(1, hyQChoise.length - 2);
-      alert("\"" + hyQChoise + "\"")
+      alert("\"" + hyQChoise + "\""); //测试
     };
   };
 };
@@ -40,7 +40,7 @@ if(hyQ == "题目"){return "答案");
 function hyQBank(hyQ)
 {
 //题库开始
-
+return ""; //测试
 //未找到数据
 return "hyErrNotFound";
 //题库结束
