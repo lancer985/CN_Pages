@@ -47,6 +47,7 @@ function hyQBank(hyQ)
 {
 //题库开始
 if(hyQ == "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？"){return "三个月"};
+if(hyQ == "自古红蓝出什么？"){return "CP"};
 //未找到数据
 return "hyErrNotFound";
 //题库结束
