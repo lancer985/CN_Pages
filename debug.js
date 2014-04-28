@@ -13,7 +13,7 @@ var hyQChoice = ""; //选项名称
 for(i = 0; i < 12; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
-  hyQName = hyObjList.innerHTML.splitOnce(" ", 2);
+  hyQName = hyObjList.innerHTML.split(" ", 2);
   hyQName = hyQName[2].substring(0, hyQName[2].length - 12)
   hyQAns = hyQBank(hyQName);
   alert(hyQName);
