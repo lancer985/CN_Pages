@@ -51,6 +51,7 @@ function hyQBank(hyQ)
 if(hyQ == "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？"){return "三个月"};
 if(hyQ == "自古红蓝出什么？"){return "CP"};
 if(hyQ == "官方逼死了谁？"){return "同人"};
+if(hyQ == "下面哪位是个中二少女"){return "小鸟游六花"};
 
 //0道 - 雨宫优子（352275201）提供 - 2014.04.27
 //debug中
