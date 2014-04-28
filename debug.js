@@ -23,18 +23,17 @@ for(i = 0; i < 2; i += 1)
     for(ii = 0; i < 4; i += 1)
     {
       hyObjRdo = document.getElementById("rdo" + i + ii);
-      hyQChoise = hyObjRdo.innerHTML.split(">");
-      hyQChoise = hyQChoise[1].split("<");
-      hyQChoise = hyQChoise[0].substring(1, hyQChoise.length - 2);
-      alert("\"" + hyQChoise + "\""); //测试
+      hyQChoice = hyObjRdo.innerHTML.split(">");
+      alert(hyQChoice); //测试
+      hyQChoice = hyQChoice[1].split("<");
+      hyQChoice = hyQChoice[0].substring(1, hyQChoice.length - 2);
+      alert("\"" + hyQChoice + "\""); //测试
     };
   };
 };
 //结束
 
-//题库
-//题库格式：
-//if(hyQ == "题目"){return "答案");
+//题库 - 格式：if(hyQ == "题目"){return "答案");
 function hyQBank(hyQ)
 {
 //题库开始
