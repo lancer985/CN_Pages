@@ -8,6 +8,8 @@ var hyQList = ""; //问题的object的innerHTML缓冲
 var hyQName = ""; //问题名称
 var hyQAns = ""; //问题答案
 var hyQChoice = ""; //选项名称
+//
+var hyNFCounter = 0 //没找到数量
 //核心循环
 //for(i = 0; 1 < 100; i += 1)
 for(i = 0; i < 2; i += 1)
@@ -16,7 +18,6 @@ for(i = 0; i < 2; i += 1)
   hyQList = hyObjList.innerHTML.split(">");
   hyQName = hyQList[3].split("<");
   hyQName = hyQName[0].substring(1, hyQName[0].length - 8);
-  alert("\"" + hyQName + "\""); //测试
   hyQAns = hyQBank(hyQName);
   if(hyQAns != "hyErrNotFound")
   {
@@ -24,17 +25,22 @@ for(i = 0; i < 2; i += 1)
     {
       hyQChoice = hyQList[6 + i * 3].split("<");
       hyQChoice = hyQChoice[0].substring(0, hyQChoice[0].length - 9);
-      alert("\"" + hyQChoice + "\""); //测试
+      if(hyQChoise == hyQAns)
+      {
+        $('#rdo' + i + ii).attr('checked', 'checked');
+      };
     };
+  }else{
+    hyNFCounter += 1;
   };
 };
 //结束
-
+alert("脚本结束，有" + hyNFCounter + "道题没找到。 \n请您检查后提交。 \n欢迎您加入我们的讨论群一起讨论完善这个脚本！ \n我们的群号：204524182");
 //题库 - 格式：if(hyQ == "题目"){return "答案");
 function hyQBank(hyQ)
 {
 //题库开始
-return ""; //测试
+return "花泽香菜"; //测试
 //未找到数据
 return "hyErrNotFound";
 //题库结束
