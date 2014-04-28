@@ -23,9 +23,9 @@ for(i = 0; i < 100; i += 1)
   hyQAns = hyQBank(hyQName);
   if(hyQAns != "hyErrNotFound")
   {
-    for(ii = 0; ii < 3; ii += 1)
+    for(ii = 0; ii < 4; ii += 1)
     {
-      hyQChoice = hyQList[6 + i * 3].split("<");
+      hyQChoice = hyQList[6 + ii * 3].split("<");
       hyQChoice = hyQChoice[0].substring(0, hyQChoice[0].length - 9);
       if(hyQChoice == hyQAns)
       {
