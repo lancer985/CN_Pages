@@ -4,7 +4,7 @@ alert("Bilibili自动答题脚本 V1.0 \n题库题数：6（魂淡们，赶紧�
 //
 var hyObjList = ""; //问题的list
 //
-var hyQList = ""; //问题的object的innerHTML缓冲
+var hyQList = ""; //问题object的innerHTML缓冲
 var hyQName = ""; //问题名称
 var hyQAns = ""; //问题答案
 var hyQChoice = ""; //选项名称
