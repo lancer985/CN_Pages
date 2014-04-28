@@ -23,7 +23,7 @@ for(i = 0; i < 2; i += 1)
     for(ii = 0; i < 4; i += 1)
     {
       hyQChoice = hyQList[6 + i * 3].split("<");
-      hyQChoice = hyQChoice[0].substring(0, hyQChoice.length);
+      hyQChoice = hyQChoice[0].substring(0, hyQChoice[0].length - 2);
       alert("\"" + hyQChoice + "\""); //测试
     };
   };
