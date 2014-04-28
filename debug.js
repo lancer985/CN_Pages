@@ -13,10 +13,10 @@ var hyQChoice = ""; //选项名称
 for(i = 0; i < 12; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
-  hyQName = hyObjList.innerHTML.split(" ", 3);
-  hyQName = hyQName[2].substring(0, hyQName[2].length - 12)
-  hyQAns = hyQBank(hyQName);
+  hyQName = hyObjList.innerHTML.split(">");
+  hyQName = hyQName[3].split("<");
   alert(hyQName);
+  hyQAns = hyQBank(hyQName);
   for(ii = 0; i < 4; i += 1) //读取选项
   {
     hyObjRdo = document.getElementById("rdo" + i + ii);
@@ -26,6 +26,10 @@ for(i = 0; i < 12; i += 1)
 //结束
 
 //题库
+/*题库说明：
+格式如下：
+if(hyQ == "题目"){return "答案");
+*/
 function hyQBank(hyQ)
 {
 //题库开始
