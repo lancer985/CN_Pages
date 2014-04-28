@@ -15,7 +15,7 @@ for(i = 0; i < 12; i += 1)
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(">");
   hyQName = hyQName[3].split("<");
-  hyQName = hyQName[0].substring(0, hyQName[0].length - 8);
+  hyQName = hyQName[0].substring(0, hyQName[0].length - 10);
   alert(hyQName);
   hyQAns = hyQBank(hyQName);
   for(ii = 0; i < 4; i += 1) //读取选项
