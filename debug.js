@@ -10,7 +10,7 @@ var hyQAns = ""; //问题答案
 var hyQChoice = ""; //选项名称
 //核心循环
 //for(i = 0; 1 < 100; i += 1)
-for(i = 0; i < 2; i += 1)
+for(i = 0; i < 12; i += 1)
 {
   hyObjList = document.getElementById("l_" + i);
   hyQName = hyObjList.innerHTML.split(" ", 3);
