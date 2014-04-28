@@ -46,7 +46,7 @@ alert("脚本结束，有" + hyNFCounter + "道题没找到。 \n请您检查后
 function hyQBank(hyQ)
 {
 //题库开始
-
+if(hyQ == "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？"){return "三个月"};
 //未找到数据
 return "hyErrNotFound";
 //题库结束
