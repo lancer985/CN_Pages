@@ -38,12 +38,12 @@ try
 //题库
 function b(q)
 {
-switch(q)
-{
+  switch(q)
+  {
 //-----题库开始-----
 
 //-----题库结束-----
 //若没找到
-default: return "hyErrNotFound";
-};
+    default: return "hyErrNotFound";
+  };
 };
