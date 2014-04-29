@@ -1,5 +1,5 @@
 alert("脚本正在Debug，建议您暂时不要使用。");
-
+/*
 alert("Bilibili自动答题脚本 V1.4 Beta \n题库题数：18（魂淡们，赶紧帮我收集啊！） \n最后更新：2014.04.29 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
 var l = "";var n = "";var a = "";var s = "";var c = 0;
 try{for(i = 0; i < 100; i += 1){l = document.getElementById("l_" + i).split(">");n = l[3].split("<");n = n[0].substring(1, n[0].length - 8);a = b(n);if(a != "hyErrNotFound"){
@@ -19,7 +19,7 @@ case "《命运石之门》中凤凰院凶真的配音是？": return "宫野真
 case "以下哪部动漫不是京阿尼（京都动画公司）制作的？": return "FZ";
 case "《海贼王》的作者是谁？": return "尾田荣一郎";
 case "《科学的超电磁炮》中，Lever\.5被称为？": return "超能力者";
-/*10*/case "《魔法少女小圆》的导演是谁？": return "新房昭之";
+/*10*\/case "《魔法少女小圆》的导演是谁？": return "新房昭之";
 case "奥特曼来自哪个星云？": return "m78";
 case "《龙与虎》中的龙指的是谁？": return "高须龙儿";
 case "十万个冷笑话是哪家漫画网连载的": return "有妖气";
@@ -29,3 +29,4 @@ case "日语\“我爱你\”的空耳是什么？": return "阿姨洗铁路";
 case "《某科学的超电磁炮》中，佐天同学经常对初春同学做的一件事情是什么？": return "掀裙";
 //-----题库结束-----
 default: return "hyErrNotFound";};};
+*/
