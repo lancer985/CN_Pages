@@ -1,4 +1,4 @@
-function abc(){return;};
+function abc(){var i = 1;};
 alert(abc());
 /*
 雨宫优子（352275201）提供 - 2014.04.27
