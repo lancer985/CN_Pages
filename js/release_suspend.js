@@ -1,3 +1,5 @@
+alert("脚本正在Debug，建议您暂时不要使用。");
+
 alert("Bilibili自动答题脚本 V1.4 Beta \n题库题数：18（魂淡们，赶紧帮我收集啊！） \n最后更新：2014.04.29 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
 var l = "";var n = "";var a = "";var s = "";var c = 0;
 try{for(i = 0; i < 100; i += 1){l = document.getElementById("l_" + i).split(">");n = l[3].split("<");n = n[0].substring(1, n[0].length - 8);a = b(n);if(a != "hyErrNotFound"){
