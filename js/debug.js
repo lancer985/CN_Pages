@@ -4,7 +4,7 @@ var c = 0;
 {*/
   for(i = 0; i < 100; i += 1)
   {
-    var l = document.getElementById("l_" + i).split(">");
+    var l = document.getElementById("l_" + i).innerHTML.split(">");
     var n = l[3].split("<");
     n = n[0].substring(1, n[0].length - 8);
     var a = b(n);
