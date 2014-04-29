@@ -53,7 +53,6 @@ if(hyQ == "团战可以输，\_\_\_\_必须死？"){return "提莫"};
 //debug中
 
 //-----题库结束-----
-//未找到数据
+//若没找到（如果有题的答案是“hyErrNotFound”我会改了下面的return。不过不会有这种题吧……）
 return "hyErrNotFound";
-//题库结束
 };
