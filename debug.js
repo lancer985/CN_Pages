@@ -1,5 +1,3 @@
-function abc(){alert("");var i = 1;};
-alert(abc());
 /*
 雨宫优子（352275201）提供 - 2014.04.27
 if(hyQ =="T-34坦克Mod1939配备的主炮口径多大"){return"76.2mm"};
