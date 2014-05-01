@@ -56,6 +56,7 @@ function z(x, y)
 };
 function b(q)
 {
+  return "adaf";//测试
   switch(q)
   {
 //32 + 273 = 305
