@@ -12,7 +12,7 @@ var obj = document.createElement("script");
 obj.setAttribute("type","text\/javascript");
 obj.setAttribute("src", file);
 obj.setAttribute("charset", "UTF-8");
-t("head")[0].appendChild(o);
+t("head")[0].appendChild(obj);
 function t(id)
 {
   return document.getElementsByTagName(id)
