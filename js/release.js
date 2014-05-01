@@ -28,6 +28,7 @@ try
 }catch(e){
   alert("发生错误，脚本将终止。 \n若您在答题页面运行的这个脚本，请截图并发给我。 \n错误信息： \n" + e);
 };
+alert("鸣谢： \n雨宫优子（352275201）");
 function b(q)
 {
   switch(q)
@@ -82,24 +83,24 @@ case "游戏《生化危机1》的第一女主角是谁？": return"吉尔•瓦
 case "回转企鹅罐中一共有多少个ED？出了多少个OST": return"10,8";
 case "身为纯爷们,绝对从不回头看什么": return"爆炸";
 case "以下哪一位不是《最终幻想：零式》的CV": return"钉宫理惠";
-case "《大航海时代2》阿兰的特长是什么？ ": return"会计";
-case "钢之炼金术师FA中角色张梅身边总跟着一只什么动物 ": return"熊猫";
-case "Fate stay night中,士郎击杀Berserker所投影的武器叫？ ": return"Caliburn石中剑";
-case "初音未来的音源提供者是哪个声优？ ": return"藤田咲";
+case "《大航海时代2》阿兰的特长是什么？": return"会计";
+case "钢之炼金术师FA中角色张梅身边总跟着一只什么动物": return"熊猫";
+case "Fate stay night中,士郎击杀Berserker所投影的武器叫？": return"Caliburn石中剑";
+case "初音未来的音源提供者是哪个声优？": return"藤田咲";
 case "著名电子游戏《上古卷轴》是由哪家公司开发的？": return" Bethesda";
-case "石蕗惠汰,羽濑川小鹰,须贺京太郎,大路饼藏四人的共同点[不]包括 ": return"都是男孩子";
-case "在Mugen中,最高的人物等级是？ ": return"论外";
-case "圣斗士星矢的看家技能是？ ": return"天马流星拳";
-case "魔兽世界里的联盟英雄吉安娜是什么职业 ": return"法师";
-case "谁被称为日本动画界的黑泽明？ ": return"宫崎骏";
-case "世界已完蛋”来自于哪部作品OP的空耳？ ": return"潜行吧奈亚子";
+case "石蕗惠汰,羽濑川小鹰,须贺京太郎,大路饼藏四人的共同点[不]包括": return"都是男孩子";
+case "在Mugen中,最高的人物等级是？": return"论外";
+case "圣斗士星矢的看家技能是？": return"天马流星拳";
+case "魔兽世界里的联盟英雄吉安娜是什么职业": return"法师";
+case "谁被称为日本动画界的黑泽明？": return"宫崎骏";
+case "“世界已完蛋”来自于哪部作品OP的空耳？": return"潜行吧奈亚子";
 case "炮姐的最爱是？": return"呱太";
 case "美少女战士的作者是哪位漫画家的夫人？": return"富坚义博";
-case "陈坤在微博向大家推荐了哪部动画得到群众热烈反应？": return"《Fate/Zero》";
-case "在FATE STAY NIGHT 中阿尔托莉雅的职介是什么 ": return"Saber";
-case "正面上我啊是哪个人物的名台词 【出自HKG字幕组,大战后炮姐被黑子正面上了。。。。": return"御坂美琴";
+case "陈坤在微博向大家推荐了哪部动画得到群众热烈反应？": return"《Fate\/Zero》";
+case "在FATE STAY NIGHT 中阿尔托莉雅的职介是什么": return"Saber";
+case "正面上我啊是哪个人物的名台词"/*【出自HKG字幕组,大战后炮姐被黑子正面上了。。。。*/: return"御坂美琴";
 case "为《星际牛仔》《攻壳机动队》《Macross F》等动画配乐的著名音乐制作人是": return"菅野洋子";
-case "⑨指的是东方project中的那个人物？ ": return"琪露诺";
+case "⑨指的是东方project中的那个人物？": return"琪露诺";
 case "《天降之物》第一集中从天而降的天使名字是？": return"伊卡洛斯";
 case "路过草从最担心的是哪句话？ ": return"德玛西亚";
 case "《海贼王》中与路飞同行的一位厨师是": return"香吉士";
