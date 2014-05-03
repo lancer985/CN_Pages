@@ -52,7 +52,8 @@ try
 alert("感谢这些人对我的大力支持（不分排名）： \n雨宫优子（352275201） ");
 function z(x, y)
 {
-  $('#rdo' + x + y).attr('checked', 'checked');
+  document.getElementById("rdo" + x + y).checked = "checked";
+  //$('#rdo' + x + y).attr('checked', 'checked');
 };
 function b(q)
 {
