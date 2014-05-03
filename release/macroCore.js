@@ -53,7 +53,6 @@ alert("感谢这些人对我的大力支持（不分排名）： \n雨宫优子�
 function z(x, y)
 {
   document.getElementById("rdo" + x + y).checked = "checked";
-  //$('#rdo' + x + y).attr('checked', 'checked');
 };
 function b(q)
 {
@@ -192,7 +191,7 @@ case "《旋风管家》中的女主角三千院凪的身高是？(直接输入�
 case "银河英雄传说中男主角杨威利是如何死亡的": return"被地球教刺客刺杀";
 case "动漫（雪之少女）泽渡真琴,的口头禅是什么 ": return"啊呜";
 case "《魔法少女小圆》的编剧（脚本）是谁？": return"虚渊玄";
-case "下列哪个角色不是关智一配音的？": return"基拉•大和";
+case "下列哪个角色不是关智一配音的？": return"基拉·大和";
 case "是谁提出“感应电流的磁场总是要阻碍引起感应电流的磁通量的变化“?": return"楞次";
 case "动漫《火影忍者》中,宇智波佐助所拥有的瞳术的名字是？": return"写轮眼";
 case "《轻音少女》动画中,活动室里养的动物是？": return"乌龟";
