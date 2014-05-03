@@ -306,7 +306,7 @@ case "英雄联盟中国服三大永久免费英雄之一是？": return"流浪�
 case "声优界中的大辅家族不包括以下哪个姓": return"铃木";
 case "《无头骑士异闻录》中,黄巾贼的首领被称呼为？": return"将军";
 case "以下哪一个动画原作者是男性？": return"黑塔利亚";
-case "空条Q太郎在JOJO里出场了多少部？": return"3";
+case "空条Q太郎在JOJO里出场了多少部？": return"3部";
 case "2ch上某gal讨论板块“叶键版”分别指的是那两个游戏厂商": return"Moon Laef&Key ";
 case "Fate Zero第二季中的OP作者是谁": return"梶浦由记";
 case "以下哪个词是来自日语,意为不引人注意的小知识": return"豆知识";
