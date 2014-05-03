@@ -198,7 +198,7 @@ case "《轻音少女》动画中,活动室里养的动物是？": return"乌龟
 case "灼眼的夏娜中夏娜所带的项链中红世之徒的名字是": return"亚拉斯托尔";
 case "国产动画片《魁拔》中,魁拔的重生时间是": return"333年";
 case "以下哪一款RPG（角色扮演游戏）属于WRPG（欧美角色扮演游戏）？": return"博德之门";
-case "C语言中，如果ar是个数组，那么表达式ar[i]与什么等价？": return"*ar(i+1)";
+case "C语言中，如果ar是个数组，那么表达式ar[i]与什么等价？": return"*(ar+i)";
 case "c语言中换行符是？": return"\\n";
 case "某万事屋老板的名字是？": return"坂田银时";
 case "以下那部动画的配乐不是梶浦由纪？": return"fate stay night";
