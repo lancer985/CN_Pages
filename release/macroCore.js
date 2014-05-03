@@ -125,7 +125,7 @@ case "回转企鹅罐中一共有多少个ED？出了多少个OST": return"10，
 case "身为纯爷们,绝对从不回头看什么": return"爆炸";
 case "以下哪一位不是《最终幻想：零式》的CV": return"钉宫理惠";
 case "《大航海时代2》阿兰的特长是什么？": return"会计";
-case "钢之炼金术师FA中角色张梅身边总跟着一只什么动物": return"熊猫";
+case "钢之炼金术师FA中角色张梅身边总跟着一只什么动物": return"小熊猫";
 case "Fate stay night中,士郎击杀Berserker所投影的武器叫？": return"Caliburn石中剑";
 case "初音未来的音源提供者是哪个声优？": return"藤田咲";
 case "著名电子游戏《上古卷轴》是由哪家公司开发的？": return" Bethesda";
