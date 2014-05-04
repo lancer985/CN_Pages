@@ -8,6 +8,7 @@
     <title>Bilibili自动答题脚本</title>
     <style>
       /*<!--*/
+      /*div*/
       div
       {
         margin-right:10%;
@@ -20,20 +21,18 @@
         margin-right:5%;
         margin-left:5%;
       }
+      /*其他*/
       a, b, h2, h4, input
       {
         margin-left:5%;
         color:#000000;
-      }
-      a.hyNoMar
-      {
-        margin-left:0px;
       }
       p.hyEnding
       {
         font-size:75%;
         text-align:center;
       }
+      /*表格*/
       table, th, td
       {
         border:1px solid black;
@@ -47,6 +46,12 @@
       {
         background-color:#4F4F4F;
         color:#FFFFFF;
+      }
+      /*无边*/
+      .hyNoMar
+      {
+        margin-right:0px;
+        margin-left:0px;
       }
       /*-->*/
     </style>
@@ -124,9 +129,9 @@
 
   <div><div class="hySmall" id="hyGen">
     <br><br>
-    <input style="width:30%" type="button" onclick="hyTableH('add')" value="增加一行" />
-    <input style="width:30%" type="button" onclick="hyTableH('del')" value="清空" />
-    <input style="width:30%" type="button" onclick="hyTableH('gen')" value="生成" /><br>
+    <input class="hyNoMar" style="width:30%" type="button" onclick="hyTableH('add')" value="增加一行" />
+    <input class="hyNoMar" style="width:30%" type="button" onclick="hyTableH('del')" value="清空" />
+    <input class="hyNoMar" style="width:30%" type="button" onclick="hyTableH('gen')" value="生成" /><br>
     <br>
     <table style="width:90%" id="hyTable">
       <tr>
@@ -135,7 +140,7 @@
       </tr>
     </table>
     <br><br>
-    <div id="hyOP">按”生成“按钮生成</div>
+    <div id="hyOP" class="hyNoMar">按“生成”按钮生成</div>
     <br><br>
   </div></div>
 
