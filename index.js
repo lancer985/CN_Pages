@@ -47,7 +47,7 @@ function hyTableH(hyCMD)
       hyRowCount = 0;
     };
   }else{
-    for(var i = 0; i <= hyRowCount; i += 1)
+    for(var i = 0; i < hyRowCount; i += 1)
     {
       hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + "\": reuturn \"" + hyID('hyCell' + i + "1").value + "\";" + "<br>";
     };
