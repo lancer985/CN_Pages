@@ -20,10 +20,30 @@ var hyBuffer = "";
 
 hyTableH("add");
 //-----functions-----
-//main
 function hyID(hyID)
 {
   return document.getElementById(hyID);
+};
+
+function hyLS(hyName, hyCMD, hyData)
+{
+  var hyErrMSG = "Local Storage Error: \n";
+  if(hyCMD == "r")
+  {
+    try
+    {
+      return localStorage.getItem(hyName);
+    }catch(hyEX){
+      alert(hyErrMSG + hyEX);
+    };
+  }else{
+    try
+    {
+      localStorage.setItem(hyName, hyData);
+    }catch(hyEX){
+      alert(hyErrMSG + hyEX);
+    };
+  };
 };
 
 function hyTableH(hyCMD)
