@@ -36,6 +36,7 @@ function hyTableH(hyCMD)
     hyTableCell1.innerHTML = hyTB + "id='hyCell" + hyRowCount + "0' />";
     var hyTableCell2 = hyRow.insertCell(1);
     hyTableCell2.innerHTML = hyTB + "id='hyCell" + hyRowCount + "1' />";
+    hyRowCount += 1;
   }else if(hyCMD == "del"){
     if(confirm("您真的想重置表格么？"))
     {
