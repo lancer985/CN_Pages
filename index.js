@@ -69,7 +69,7 @@ function hyTableH(hyCMD)
   }else{
     for(var i = 0; i < hyRowCount; i += 1)
     {
-      hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + "\": return \"" + hyID('hyCell' + i + "1").value + "\";" + "<br>";
+      hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + "\": return \"" + hyID('hyCell' + i + "1").value + "\";\n";
     };
     hyID('hyOP').innerHTML = hyBuffer;
     hyBuffer = "";
