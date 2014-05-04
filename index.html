@@ -25,6 +25,10 @@
         margin-left:5%;
         color:#000000;
       }
+      a.hyNoMar
+      {
+        margin-left:0px;
+      }
       p.hyEnding
       {
         font-size:75%;
@@ -88,6 +92,7 @@
     <a>问题二："&lt;a&gt;"在html中是什么？答案：超链接</a><br>
     <a>写成上面的格式应该是：</a><br>
     <a>case "\"&amp;lt;a&amp;gt;\"在html中是什么？": return "超链接";</a><br>
+    <a>1.4.如果您愿意，清使用下面的</a><a class="hyNoMar" href="#hyGen">生成器</a><a class="hyNoMar">。</a><br>
     <br>
     <a>2.完善题库：</a><br>
     <a>2.1.若您发现题库有错误、因为和Bilibili答题页面源码有偏差导致无法正确填答案等问题，请将相关信息（问题正确名称、问题正确答案和代码行数位置等）发给我（同样建议使用邮箱；标题请写“Bilibili题库完善”）；</a><br>
@@ -114,6 +119,33 @@
     <b style="color:red">警告：不要在答题页以外的页面运行这个脚本！</b><br>
     <br><br>
   </div></div>
+
+  <p><br></p>
+
+  <div><div class="hySmall" id="hyGen">
+    <br>
+    <h4>生成器：</h4>
+    <table>
+      <tr>
+        <th>问题</th>
+        <th>答案</th>
+      </tr>
+    </table>
+    <br>
+    <input type="button" onclick="hyGenerate()" value="生成！" />
+    <br><br>
+  </div></div>
+
+  <script src="http://X01X012013.github.io/BiliMacro/index.js"></script>
+  <noscript>
+    <p><br></p>
+
+    <div><div class="hySmall">
+      <br>
+      <h4>您的浏览器不支持或阻止了Java脚本！生成器将不生效。</h4>
+      <br>
+    </div></div>
+  </noscript>
 
   <p><br></p>
 
