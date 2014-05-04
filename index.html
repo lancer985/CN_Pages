@@ -32,6 +32,10 @@
         font-size:75%;
         text-align:center;
       }
+      input.hyOPBut
+      {
+        width:17%;
+      }
       /*表格*/
       table, th, td
       {
@@ -131,9 +135,11 @@
     <br>
     <h4>生成器：</h4>
     <div class="hyNoMar" style="text-align:center">
-      <input class="hyNoMar" style="width:29%" type="button" onclick="hyTableH('add')" value="增加一行" />
-      <input class="hyNoMar" style="width:29%" type="button" onclick="hyTableH('del')" value="清空" />
-      <input class="hyNoMar" style="width:29%" type="button" onclick="hyTableH('gen')" value="生成" />
+      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('add')" value="增加一行" />
+      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('del')" value="清空" />
+      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('gen')" value="生成" />
+      <input class="hyNoMar hyOPBut" type="button" onclick="hyLS('hyBiliMacroSave', 'w', hyID('hyOP').innerHTML);alert('已将输出框保存到Local Storage。')" value="保存" />
+      <input class="hyNoMar hyOPBut" type="button" onclick="if(confirm('您确定吗？'){hyID('hyOP').innerHTML = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出框。');}" value="读取" />
     </div>
     <br>
     <table style="width:90%" id="hyTable">
