@@ -68,6 +68,7 @@ function hyTableH(hyCMD)
         hyID('hyTable').deleteRow(1);
       };
       hyRowCount = 0;
+      hyTableH("add");
     };
   }else{
     for(var i = 0; i < hyRowCount; i += 1)
