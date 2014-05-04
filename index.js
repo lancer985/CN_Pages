@@ -73,6 +73,6 @@ function hyTableH(hyCMD)
     };
     hyID('hyOP').innerHTML = hyBuffer;
     hyBuffer = "";
-    alert("生成完成！");
+    hyID('hyOP').focus();
   };
 };
