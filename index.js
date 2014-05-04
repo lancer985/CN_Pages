@@ -25,7 +25,7 @@ function hyID(hyID)
 
 function hyTableH(hyCMD)
 {
-  hyTB = "<input type='text' class='hyNoMar' style='width:95%' />"
+  hyTB = "<input type='text' class='hyNoMar' style='width:100%' />"
   if(hyCMD == "add")
   {
     var hyRow = hyID('hyTable').insertRow(hyID('hyTable').rows.length);
