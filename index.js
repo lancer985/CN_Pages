@@ -27,7 +27,7 @@ function hyID(hyID)
 
 function hyLS(hyName, hyCMD, hyData)
 {
-  var hyErrMSG = "Local Storage Error: \n";
+  var hyErrMSG = "Local Storage错误: \n";
   if(hyCMD == "r")
   {
     try
