@@ -134,14 +134,6 @@
   <div><div class="hySmall" id="hyGen">
     <br>
     <h4>生成器：</h4>
-    <div class="hyNoMar" style="text-align:center">
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('add')" value="增加一行" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('del')" value="清空" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('gen')" value="生成" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyLS('hyBiliMacroSave', 'w', hyID('hyOP').value);alert('已将输出框中的数据保存到Local Storage。')" value="保存" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="if(confirm('您真的要读取保存的输出数据么？ \n这将覆盖输出框中原有的数据。')){hyID('hyOP').value = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出数据。');}" value="读取" />
-    </div>
-    <br>
     <table style="width:90%" id="hyTable">
       <tr>
         <th style="width:60%">问题</th>
@@ -166,8 +158,6 @@
 您可以点击“清空”来删除表格的所有行。
 
 “保存”可以把这里的数据存到浏览器的Local Storage中；您以后可以点击“读取”按钮读取（正常情况下，若您不手动清理您浏览器的浏览数据，Local Storage中的数据永远不会消失。）。
-
-表格上面和下面的按钮效果相同，为了防止表格太长总要翻到上面按……
 </textarea>
 
     <br><br><br>
