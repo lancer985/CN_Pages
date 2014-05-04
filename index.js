@@ -15,6 +15,9 @@ window.onbeforeunload = function(hyEvent)
   return hyUnloadMSG;
 };
 
+var hyRowCount = 0;
+var hyBuffer = "";
+
 hyTableH("add");
 //-----functions-----
 //main
@@ -25,14 +28,14 @@ function hyID(hyID)
 
 function hyTableH(hyCMD)
 {
-  hyTB = "<input type='text' class='hyNoMar' style='width:98%' />"
+  hyTB = "<input type='text' class='hyNoMar' style='width:98%' "
   if(hyCMD == "add")
   {
     var hyRow = hyID('hyTable').insertRow(hyID('hyTable').rows.length);
     var hyTableCell1 = hyRow.insertCell(0);
-    hyTableCell1.innerHTML = hyTB;
+    hyTableCell1.innerHTML = hyTB + "id='hyCell" + hyRowCount + "0'";
     var hyTableCell2 = hyRow.insertCell(1);
-    hyTableCell2.innerHTML = hyTB;
+    hyTableCell2.innerHTML = hyTB + "id='hyCell" + hyRowCount + "1'";
   }else if(hyCMD == "del"){
     if(confirm("您真的想重置表格么？"))
     {
@@ -40,15 +43,14 @@ function hyTableH(hyCMD)
       {
         hyID('hyTable').deleteRow(1);
       };
+      hyRowCount = 0;
     };
   }else{
-    var table = hyID('hyTable');
-    for(var r = 0, n = table.rows.length; r < n; r += 1)
+    for(var i = 0; i <= hyRowCount; i += 1)
     {
-      for(var c = 0, m = table.rows[r].cells.length; c < m; c += 1)
-      {
-        alert(table.rows[r].cells[c].innerHTML);
-      };
+      hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + ": reuturn \"" + hyID('hyCell' + i + "1").value + "\";" + "<br>";
     };
+    hyID('hyOP').innerHTML = hyBuffer;
+    hyBuffer = "";
   };
 };
