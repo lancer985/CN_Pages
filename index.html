@@ -124,7 +124,9 @@
 
   <div><div class="hySmall" id="hyGen">
     <br><br>
-    <input style="width:90%" type="button" onclick="hyGenerate()" value="生成" /><br>
+    <input style="width:30%" type="button" onclick="hyTableH('add')" value="增加一行" />
+    <input style="width:30%" type="button" onclick="hyTableH('del')" value="清空" />
+    <input style="width:30%" type="button" onclick="hyTableH('gen')" value="生成" /><br>
     <br>
     <table style="width:90%" id="hyTable">
       <tr>
@@ -132,6 +134,8 @@
         <th style="width:40%">答案</th>
       </tr>
     </table>
+    <br><br>
+    <div id="hyOP">按”生成“按钮生成</div>
     <br><br>
   </div></div>
 
