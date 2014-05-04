@@ -1,6 +1,6 @@
 var c = 0;
 var d = 0;
-alert("Bilibili自动答题脚本 V2.2 \n题库题数：338 \n最后更新：2014.05.03 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
+alert("Bilibili自动答题脚本 V2.2 \n题库题数：347 \n最后更新：2014.05.03 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
 if(confirm("若有题没有找到答案或答案无效，是否自动填选第一个选项（若选择否将会留空）？ \n确定：是；取消：否。"))
 {
   f = true;
@@ -58,8 +58,8 @@ function b(q)
 {
   switch(q)
   {
-//65 + 273 = 338
-//题库01 - 65道 - 【群主】？（1043201997）提供 - 2014.04.29
+//74 + 273 = 347
+//题库01 - 74道 - 【群主】？（1043201997）提供 - 2014.05.04
 case "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？": return "三个月";
 case "自古红蓝出什么？": return "CP";
 case "官方逼死了谁？": return "同人";
@@ -125,6 +125,15 @@ case "\"世界已完蛋\"出自哪部作品": return "奈亚子";
 case "直到我膝盖中了一箭出自哪里": return "上古卷轴5";
 case "《狼与香辛料》的作者是谁？": return "支仓冻砂";
 case "《天才麻将少女》的女主角宫永咲在什么情况下麻将实力较强？": return "不穿袜子时";
+case "KEY社三大“催泪弹”不包括": return "FATE/STAY NIGHT";
+case "《命运石之门》中的椎名 真由理的配音是谁": return "花泽香菜";
+case "fate stay night和fate zero中的吉尔伽美什别称什么？": return "金闪闪";
+case "《某科学的超电磁炮》中“炮姐”是指以下哪人？": return "御坂美琴";
+/*70*/case "被网友称为“世界第一吃货殿下”的是": return "洛天依";
+case "枪兵的幸运等级": return "E";
+case "以下哪个不是高级程序设计语言": return "汇编语言";
+case "扶他出去!": return "YOOOOOO";
+case "下列哪个不是Microsoft产品": return "Android";
 //题库02 - 273道 - 雨宫优子（352275201）提供 - 2014.04.30
 case "灼眼的夏娜中女主角的刀名字叫": return"贽殿遮那";
 case "《摇曳百合》中京子喜爱的冰淇淋口味是什么": return"朗姆酒葡萄干";
@@ -160,7 +169,7 @@ case "炮姐的最爱是？": return"呱太";
 case "美少女战士的作者是哪位漫画家的夫人？": return"富坚义博";
 case "陈坤在微博向大家推荐了哪部动画得到群众热烈反应？": return"《Fate/Zero》";
 case "在FATE STAY NIGHT 中阿尔托莉雅的职介是什么": return"Saber";
-case "正面上我啊是哪个人物的名台词"/*【出自HKG字幕组,大战后炮姐被黑子正面上了。。。。*/: return"御坂美琴";
+case "正面上我啊是哪个人物的名台词": return"御坂美琴";
 case "为《星际牛仔》《攻壳机动队》《Macross F》等动画配乐的著名音乐制作人是": return"菅野洋子";
 case "⑨指的是东方project中的那个人物？": return"琪露诺";
 case "《天降之物》第一集中从天而降的天使名字是？": return"伊卡洛斯";
@@ -172,7 +181,7 @@ case "虽然我可爱又迷人,但我会招来__。": return"死亡";
 case "key社以下哪一部作品不是由京都动画改编？": return"Little Busters!";
 case "动漫11区指哪里？": return"日本";
 case "《CLANNAD》中,藤林杏的摩托车是什么颜色的？": return"白色";
-case "《穷神》中红叶是什么罩杯？": return"AA罩杯"/*...*/;
+case "《穷神》中红叶是什么罩杯？": return"AA罩杯";
 case "《兽的演奏者艾琳》中的里岚是雄性还是雌性？": return"雌性";
 case "东方幻想乡中妖怪之山上守矢神社中的风祝叫什么名字？": return"东风谷早苗";
 case "《電腦線圈》中的沙奇(Search Mutton),是甚麼？": return"病毒驱除程式";
@@ -399,7 +408,6 @@ case "《未来日记》中，“雪辉日记”的持有者是谁？": return"�
 case "以下哪首是洛天依的歌": return"千年食谱颂";
 case "动画《刀剑神域》中桐人他女儿结衣在ALO里系统识别种族是？": return"导航妖精";
 case "俺はGandom（我就是高达）这句话是谁说的？": return"刹那•F•清英";
-//
     default: return "hyErrNotFound";
   };
 };
