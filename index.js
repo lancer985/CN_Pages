@@ -48,9 +48,10 @@ function hyTableH(hyCMD)
   }else{
     for(var i = 0; i <= hyRowCount; i += 1)
     {
-      hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + ": reuturn \"" + hyID('hyCell' + i + "1").value + "\";" + "<br>";
+      hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + "\": reuturn \"" + hyID('hyCell' + i + "1").value + "\";" + "<br>";
     };
     hyID('hyOP').innerHTML = hyBuffer;
     hyBuffer = "";
+    alert("生成完成！");
   };
 };
