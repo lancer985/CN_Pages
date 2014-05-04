@@ -14,3 +14,37 @@ window.onbeforeunload = function(hyEvent)
   };
   return hyUnloadMSG;
 };
+
+hyTableH("add");
+//-----functions-----
+//main
+function hyID(hyID)
+{
+  return document.getElementById(hyID);
+};
+
+function hyTableH(hyCMD)
+{
+  hyTB = "<input type='text' style='width:100%' />"
+  if(hyCMD == "add")
+  {
+    var hyRow = hyID('hyTable').insertRow(hyID('hyTable').rows.length);
+    var hyTableCell1 = hyRow.insertCell(0);
+    hyTableCell1.innerHTML = hyTB;
+    var hyTableCell2 = hyRow.insertCell(1);
+    hyTableCell2.innerHTML = hyTB;
+  }else if(hyCMD == "del"){
+    if(confirm("您真的想重置表格么？"))
+    {
+      while(1 < hyID('hyTable').rows.length)
+      {
+        hyID('hyTable').deleteRow(1);
+      };
+    };
+  }else{
+    for(i = 1; i < hyID('hyTable').rows.length; i += 1)
+    {
+      
+    };
+  };
+};
