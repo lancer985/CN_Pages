@@ -139,7 +139,7 @@
       <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('del')" value="清空" />
       <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('gen')" value="生成" />
       <input class="hyNoMar hyOPBut" type="button" onclick="hyLS('hyBiliMacroSave', 'w', hyID('hyOP').innerHTML);alert('已将输出框保存到Local Storage。')" value="保存" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="if(confirm('您确定吗？')){hyID('hyOP').innerHTML = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出框。');}" value="读取" />
+      <input class="hyNoMar hyOPBut" type="button" onclick="if(confirm('您真的要读取保存的输出数据吗？')){hyID('hyOP').innerHTML = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出框。');}" value="读取" />
     </div>
     <br>
     <table style="width:90%" id="hyTable">
