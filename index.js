@@ -43,9 +43,9 @@ function hyTableH(hyCMD)
     };
   }else{
     var table = hyID('hyTable');
-    for(var r = 0, var n = table.rows.length; r < n; r += 1)
+    for(var r = 0, n = table.rows.length; r < n; r += 1)
     {
-      for(var c = 0, var m = table.rows[r].cells.length; c < m; c += 1)
+      for(var c = 0, m = table.rows[r].cells.length; c < m; c += 1)
       {
         alert(table.rows[r].cells[c].innerHTML);
       };
