@@ -51,12 +51,15 @@ function hyTableH(hyCMD)
   hyTB = "<input type='text' class='hyNoMar' style='width:98%' "
   if(hyCMD == "add")
   {
-    var hyRow = hyID('hyTable').insertRow(hyID('hyTable').rows.length);
-    var hyTableCell1 = hyRow.insertCell(0);
-    hyTableCell1.innerHTML = hyTB + "id='hyCell" + hyRowCount + "0' />";
-    var hyTableCell2 = hyRow.insertCell(1);
-    hyTableCell2.innerHTML = hyTB + "id='hyCell" + hyRowCount + "1' />";
-    hyRowCount += 1;
+    for(var i = 0; i < 10; i += 1)
+    {
+      var hyRow = hyID('hyTable').insertRow(hyID('hyTable').rows.length);
+      var hyTableCell1 = hyRow.insertCell(0);
+      hyTableCell1.innerHTML = hyTB + "id='hyCell" + hyRowCount + "0' />";
+      var hyTableCell2 = hyRow.insertCell(1);
+      hyTableCell2.innerHTML = hyTB + "id='hyCell" + hyRowCount + "1' />";
+      hyRowCount += 1;
+    };
   }else if(hyCMD == "del"){
     if(confirm("您真的想重置表格么？"))
     {
