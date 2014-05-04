@@ -71,7 +71,7 @@ function hyTableH(hyCMD)
     {
       hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + "\": return \"" + hyID('hyCell' + i + "1").value + "\";\n";
     };
-    hyID('hyOP').innerHTML = hyBuffer;
+    hyID('hyOP').value = hyBuffer;
     hyBuffer = "";
     hyID('hyOP').focus();
   };
