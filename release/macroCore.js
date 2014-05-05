@@ -1,6 +1,10 @@
+p = document.createElement("script");
+p.setAttribute('src', 'http://X01X012013.github.io/BiliMacro/release/macroBank.js');
+p.setAttribute('charset', 'utf-8');
+document.getElementsByTagName('head')[0].appendChild(p);
 var c = 0;
 var d = 0;
-alert("Bilibili自动答题脚本 V2.2 \n题库题数：439 \n最后更新：2014.05.05 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
+alert("Bilibili自动答题脚本（Internet Explorer 11专用） V2.3 \n题库题数：439 \n最后更新：2014.05.05 \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。");
 if(confirm("若有题没有找到答案或答案无效，是否自动填选第一个选项（若选择否将会留空）？ \n确定：是；取消：否。"))
 {
   f = true;
