@@ -24,4 +24,4 @@ V 2.2
 1.使用Unicode，防止预言支持问题。
 
 V 2.3 （进行中）
-1.增加Google Chrome浏览器的支持。
+1.增加Google Chrome浏览器支持。
