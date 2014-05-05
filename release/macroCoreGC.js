@@ -1,6 +1,15 @@
 p = document.createElement("script");
 p.setAttribute('src', 'http://X01X012013.github.io/BiliMacro/release/macroBank.js');
 p.setAttribute('charset', 'utf-8');
+while(true)
+{
+  try
+  {
+    (b(""));
+    break;
+  }catch(e){
+  };
+};
 document.getElementsByTagName('head')[0].appendChild(p);
 var c = 0;
 var d = 0;
