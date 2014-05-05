@@ -35,7 +35,7 @@ function k()
             d += 1;
             break;
           };
-          var s = l[6 + j * 3].split("<");
+          var s = l[8 + j * 3].split("<");
           s = s[0].substring(0, s[0].length - 9);
           if(s == a)
           {
