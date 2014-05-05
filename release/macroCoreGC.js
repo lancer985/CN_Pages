@@ -38,8 +38,8 @@ function k()
           //测试开始
           var temp = "";
           for(iiii = 0; iiii < l.length; iiii += 1){
-            temp += iiii + ":" l[iiii];
-          }
+            temp += iiii + ":" + l[iiii];
+          };
           alert(temp);
           //测试结束
           var s = l[8 + j * 3].split("<");
