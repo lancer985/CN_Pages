@@ -1,4 +1,3 @@
-var v = "Bilibili自动答题脚本 V3.0";
 p = document.createElement("script");
 p.setAttribute('src', 'http://X01X012013.github.io/BiliMacro/release/macroBank.js');
 p.setAttribute('charset', 'utf-8');
@@ -11,6 +10,7 @@ if(r == "Google Chrome 34")
 };
 function k()
 {
+  alert("Bilibili自动答题脚本 V3.0 \n" + v + " \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。")
   var c = 0;
   var d = 0;
   if(confirm("若有题没有找到答案或答案无效，是否自动填选第一个选项（若选择否将会留空）？ \n确定：是；取消：否。"))
@@ -61,7 +61,7 @@ function k()
   }catch(e){
     alert("发生错误，脚本将终止。 \n若您在答题页面运行的这个脚本且您的浏览器是" + r + "，请截图并发给我。 \n错误信息： \n" + e);
   };
-  t();
+  alert("感谢这些人对我的大力支持（不分排名）： \n雨宫优子（352275201） ");
 };
 function z(x, y)
 {
