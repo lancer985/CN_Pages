@@ -25,11 +25,10 @@ V 2.1 - IE11
 V 2.2 - IE11
 1.使用Unicode，防止预言支持问题。
 
-V 3.0 - IE11（进行中）
+V 3.0 - IE11
 1.分离题库和核心。
 
 -----Google Chrome专用版-----
 
 V 3.0 - GC34（进行中）
-1.分离题库和核心。
-2.增加Google Chrome的支持。
+1.增加Google Chrome的支持。
