@@ -3,11 +3,11 @@ p = document.createElement("script");
 p.setAttribute('src', 'http://X01X012013.github.io/BiliMacro/release/macroBank.js');
 p.setAttribute('charset', 'utf-8');
 document.getElementsByTagName('head')[0].appendChild(p);
-if(r == "Internet Explorer 11")
+if(r == "Google Chrome 34")
 {
-  g = 6;
-}else{
   g = 7;
+}else if(r == "Internet Explorer 11"){
+  g = 6;
 };
 function k()
 {
