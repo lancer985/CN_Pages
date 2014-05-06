@@ -9,7 +9,7 @@ if(r == "Google Chrome 34")
   var g = 6;
 }else{
   alert("启动脚本错误，请到我们的网站查看最新版本的启动脚本： \nhttp://x01x012013.github.io/BiliMacro/");
-  var g = prompt("请输入您浏览器\"L_0\"物体的innerHTML被\">\"split后选项的index： ", "6");
+  var g = prompt("请输入您浏览器\"L_0\"物体的innerHTML被\">\"split后第一个选项的index： ", "6");
 };
 function k()
 {
