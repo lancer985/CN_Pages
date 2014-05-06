@@ -9,11 +9,11 @@ if(r == "Google Chrome 34")
   var g = 6;
 }else{
   alert("启动脚本错误，请到我们的网站查看最新版本的启动脚本： \nhttp://x01x012013.github.io/BiliMacro/");
-  var g = prompt("请输入您浏览器\"L_问题数\"物体的innerHTML被\">\"split后选项的index： ", "6");
+  var g = prompt("请输入您浏览器\"L_0\"物体的innerHTML被\">\"split后选项的index： ", "6");
 };
 function k()
 {
-  alert("Bilibili自动答题脚本 V3.0 \n" + v + " \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。")
+  alert("Bilibili自动答题脚本 V3.1 \n" + v + " \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。")
   var c = 0;
   var d = 0;
   if(confirm("若有题没有找到答案或答案无效，是否自动填选第一个选项（若选择否将会留空）？ \n确定：是；取消：否。"))
