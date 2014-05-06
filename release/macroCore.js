@@ -4,9 +4,12 @@ p.setAttribute('charset', 'utf-8');
 document.getElementsByTagName('head')[0].appendChild(p);
 if(r == "Google Chrome 34")
 {
-  g = 7;
+  var g = 7;
 }else if(r == "Internet Explorer 11"){
-  g = 6;
+  var g = 6;
+}else{
+  alert("启动脚本错误，请到我们的网站查看最新版本的启动脚本： \nhttp://x01x012013.github.io/BiliMacro/");
+  var g = prompt("请输入您浏览器\"L_问题数\"物体的innerHTML被\">\"split后选项的index： ", "6");
 };
 function k()
 {
