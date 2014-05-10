@@ -1,10 +1,10 @@
-var v = "题库题数：492 \n最后更新：2014.05.10";
+var v = "题库题数：512 \n最后更新：2014.05.10";
 k();
 function b(q)
 {
   switch(q)
   {
-//128 | 4 + 57 | 4 + 269 | 0 + 26 | 0 + 4 > 492
+//128 | 4 + 57 | 4 + 269 | 0 + 26 | 0 + 4 | 0 + 20 > 512
 //题库01（已确认） - 128道 - 【群主】？（1043201997）提供 - 2014.05.04
 case "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？": return "三个月";
 case "自古红蓝出什么？": return "CP";
@@ -506,6 +506,28 @@ case "下列属于酸的是？": return "H2SO4";
 case "五岳，是中国五大名山的总称，以下那个选项不属于五岳？": return "峨眉";
 case "CaC⒉ 的俗名什么？": return "电石";
 case "C7H16有几种同分异构体": return "9";
+//题库06（已确认） - 0道 - Feuler loup（410205366）提供 - 2014.05.10
+//题库06（未确认） - 20道 - Feuler loup（410205366）提供 - 2014.05.10
+case "《地狱少女》中的仙太郎的配音是谁？": return "丰永利行";
+case "两仪式有几个人格": return "2";
+case "以下哪首歌是Fate/Zero的OP": return "to the beginning";
+case "以下那种波不是电磁波？": return "超声波";
+case "街机上的《拳皇97》是由哪一个公司制作？": return "SNK";
+case "国际通用的标准音的频率是？": return "440Hz";
+case "初音岛上的万年萝莉是谁": return "芳乃樱";
+case "刀剑神域中，桐人的妹妹名字叫？": return "桐谷直叶";
+case "得了什么病也要谈恋爱？": return "中二病";
+case "《未来日记》中的女主叫什么名字？": return "我妻由乃";
+case "《我的青春恋爱物语果然有问题》女主角的名字是什么？": return "雪之下雪乃";
+case "恶作剧之吻男主角名字是（）": return "入江直树";
+case "游戏生化危机5的男主角叫什么": return "克里恩雷德菲尔德";
+case "柯南的声优是？": return "高山南";
+case " S/L大法在游戏中的意思是？": return "利用存档读档的手法";
+case "未聞花名的ed【secret base】是翻唱誰的歌？": return "zone";
+case "我国4个直辖市中哪个面积最大？": return "重庆";
+case "常言道，FFF團不燒什麼？": return "真愛";
+case "天上掉下本小册子是什么动漫？": return "死亡笔记";
+case "我妻由乃 最常使用的武器是？": return "柴刀";
     default: return "hyErrNotFound";
   };
 };
