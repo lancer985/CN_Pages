@@ -1,10 +1,10 @@
-var v = "题库题数：594 \n最后更新：2014.05.13";
+var v = "题库题数：647 \n最后更新：2014.05.13";
 k();
 function b(q)
 {
   switch(q)
   {
-//128 | 4 + 57 | 4 + 269 | 0 + 26 | 0 + 4 | 0 + 20 | 0 + 20 | 0 + 62 > 594
+//128 | 4 + 57 | 4 + 269 | 0 + 26 | 0 + 4 | 0 + 20 | 0 + 20 | 0 + 115 > 647
 //题库01（已确认） - 128道 - 【群主】？（1043201997）提供 - 2014.05.04
 case "Bilibili采用邀请码注册，注册满几个月以上的用户才能购买邀请码？": return "三个月";
 case "自古红蓝出什么？": return "CP";
@@ -551,7 +551,7 @@ case "\"既不回头，何必不忘”出自哪部游戏？": return "仙剑奇�
 case "凉宫春日是（）的团长": return "SOS团";
 case "下列声优是90后的是": return "悠木碧";
 //题库08（已确认） - 0道 - je（1298674946）提供 - 2014.05.12
-//题库08（未确认） - 62道 - je（1298674946）提供 - 2014.05.12
+//题库08（未确认） - 115道 - je（1298674946）提供 - 2014.05.12
 case "天鹰战士是哪指部动画？": return "EVA";
 case "口袋妖怪游戏中在完全随机的情况下，野外遇到闪光精灵的概率是？": return "1/8192";
 case "最终幻想VIII中登场的女主角为：": return "莉诺雅";
@@ -614,6 +614,59 @@ case "被称之为达尔文的斗犬的是历史上哪一位人物？": return "
 case "黑化御三家中角色诞生时间最早的是？": return "龙宫礼奈";
 case "以下突出环保主题的宫崎骏动画是？": return "《风之谷》";
 case "魔笛magi的作者是谁？": return "大高忍";
+case "《锁锁美同学@提不起劲》是哪位日本小说家的著作？": return "日日日";
+case "在电脑上使用模拟器，在不改变游戏内核的情况下，使用工具辅助操作的游戏方式为？": return "TAS";
+case "动画《EVA》中，被称为女神的是谁？": return "凌波丽";
+case "《我的妹妹不可能这么可爱》中的黑猫真名叫什么？": return "五更琉璃";
+case "《攻壳机动队》中超级黑客不包括谁": return "陀古萨";
+case "谁是元首的真爱": return "勃列日涅夫";
+case "银魂里面的万事屋的白色的、巨型的狗的名字是什么？": return "定春";
+case "下列哪种物质是典型的Lewis酸": return "氨";
+case "《中二病也要谈恋爱》第一集中，勇太用那只手先接到六花的小脚的？": return "右手";
+case "动画EVA中凌波丽的座驾是？": return "零号机";
+case "《空之轨迹》中男主角的名字是？": return "约修亚";
+case "我國哪條高鐵線路被譽為世界最長的高鐵線路": return "京廣高鐵";
+case "凶真的配音是？": return "宫野真守";
+case "游戏Ar Tonelico中，以下哪个诗魔法没有使用Hymmnos？": return "聆紗の子守唄";
+case "在B站大家是怎么称呼【泪腺战士】这个up主的？": return "岚少";
+case "八云家年纪最大的是谁？": return "八云紫";
+case "《进击的巨人》漫画作者是谁？": return "谏山创";
+case "《魔法少女奈叶》中旭日之心的最初持有者是？": return "高町薇薇欧";
+case "《数码宝贝》八神太一是哪一季的男主角": return "第一季";
+case "阿三喜欢玩什么": return "泥巴";
+case "《電腦線圈》中的沙奇(Search Mutton)，是甚麼？": return "病毒驅除程式";
+case "路飞的生日是日本的什么节？": return "儿童节";
+case "Fate/Zero中卫宫切嗣发射起源弹所用的手枪名叫？": return "Thompson Arms Contender";
+case "魔法少女小圆中沙耶加所使用的武器是？": return "西洋剑";
+case "2012年世萌钻石头环的获得者是谁": return "御坂美琴";
+case "《海贼王》中路飞的全名是什么？": return "蒙奇·D·路飞";
+case "《CLANNAD》里伊吹风子的CV是谁？": return "野中蓝";
+case "LOL的新英雄太强了，我们来削弱____吧。": return "刀妹";
+case "mugen中人气角色黑魅灵的原作者是谁？": return "Lates";
+case "Minecraft里面的苦力怕英文原名叫什么名字？": return "Creeper";
+case "《文学少女》中《沉陷过往的愚者》中“愚者”指的到底是谁": return "芥川一诗";
+case "《刀剑神域》中由亚丝娜担任副团长的公会名字是？": return "血盟骑士团";
+case "VOCALOID的性别参数的缩略形式是下列哪个？": return "GEN";
+case "“团长”一词源于下列哪部动画？": return "《凉宫春日的忧郁》";
+case "动画《犬夜叉》中，奈落的哪个分身直到死也一直忠于奈落，毫无怨言？": return "梦幻之白夜";
+case "以下哪部galgame不是八月设的作品？": return "G弦上的魔王";
+case "《中二病也要恋爱！》中的凸守早苗的声优是谁？": return "上坂堇";
+case "老外看《女装正太》的时候会大喊什么？": return "Yooooooooooooooo";
+case "下列元素中电负性最大的是？": return "氧";
+case "下面那些作品中没有香菜？": return "命运石之门";
+case "以下哪个游戏不是EA出品？": return "刺客信条";
+case "东方Project是由哪个团体制作的": return "上海爱丽丝幻乐团";
+case "《咎狗之血》中Shiki的昵称是什么？": return "四喜";
+case "英雄传说：零之轨迹中银的真实姓名是？": return "莉夏·毛";
+case "《我的妹妹不可能那么可爱》中高坂京介的手机号是什么": return "091-0455-1212";
+case "以下哪款游戏不是暴雪出品?": return "七雄争霸";
+case "PSP游戏《弹丸论破》中自称为校长的是谁？": return "黑白熊";
+case "《我的朋友很少》中 三日月夜空对柏崎星奈起的外号是？": return "肉";
+case "《CLANNAD》的男主人公的是谁？": return "冈崎朋也";
+case "以下哪一部动画曾因画面闪动过于频繁，引起观众不适而停播？": return "神奇宝贝";
+case "《蜡笔小新》中主人公小新的姓氏是什么？": return "野原";
+case "阿卡林是哪个动漫女主的外号": return "赤座灯里";
+case "《Durarara!!》中dollars的首领是谁？": return "龙之峰帝人";
     default: return "hyErrNotFound";
   };
 };
