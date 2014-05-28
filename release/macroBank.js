@@ -178,7 +178,7 @@ case "罪恶王冠男主的名字": return "樱满集 ";
 case "浦科特m5p固态硬盘采用的是什么主控芯片": return "Marvell 88SS9187-BLD2";
 case "著名游戏制作人板垣伴信的绰号是什么？": return "硫酸脸";
 case "《AIR》的女主角的名字？": return "神尾观铃";
-case "凉宫的小说中无尽的八月一共重复了多少遍？": return "15532 ";
+case "凉宫的小说中无尽的八月一共重复了多少遍？": return "15532";
 case "《Fate/zero》的剧本是谁写的？": return "虚渊玄";
 case "被称为神谷娘娘的是哪位声优？": return "神谷浩史";
 case "未来日记中我妻由乃的声优是谁": return "村田知沙";
