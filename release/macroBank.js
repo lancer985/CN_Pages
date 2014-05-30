@@ -174,7 +174,7 @@ case "北极熊的毛是什么颜色？": return "透明";
 case "美树沙耶加所爱的人是谁？": return "上条恭介";
 case "《潜行吧！奈亚子》中邪神奈亚拉托提普的天敌是？": return "克图格亚";
 case "下列人物不属于黑白后宫的是": return "博丽灵梦";
-case "罪恶王冠男主的名字": return "樱满集 ";
+case "罪恶王冠男主的名字": return "樱满集";
 case "浦科特m5p固态硬盘采用的是什么主控芯片": return "Marvell 88SS9187-BLD2";
 case "著名游戏制作人板垣伴信的绰号是什么？": return "硫酸脸";
 case "《AIR》的女主角的名字？": return "神尾观铃";
