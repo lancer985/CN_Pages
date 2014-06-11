@@ -3,7 +3,7 @@ var p = document.createElement("script");
 p.setAttribute('src', 'http://X01X012013.github.io/BiliMacro/release/macroBank.js');
 p.setAttribute('charset', 'utf-8');
 document.getElementsByTagName('head')[0].appendChild(p);
-if(r == "Google Chrome 34")
+if(r == "Google Chrome 35")
 {
   var g = 7;
 }else if(r == "Internet Explorer 11"){
