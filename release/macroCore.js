@@ -1,4 +1,5 @@
-p = document.createElement("script");
+var t = " \n欢迎您加入我们的群一起讨论并完善题库！ \n一群：204524182 \n二群：122214155";
+var p = document.createElement("script");
 p.setAttribute('src', 'http://X01X012013.github.io/BiliMacro/release/macroBank.js');
 p.setAttribute('charset', 'utf-8');
 document.getElementsByTagName('head')[0].appendChild(p);
@@ -13,7 +14,7 @@ if(r == "Google Chrome 34")
 };
 function k()
 {
-  alert("Bilibili自动答题脚本 V3.1 \n" + v + " \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。 \n我们的QQ群号：204524182 \n\n按确定开始执行。")
+  alert("Bilibili自动答题脚本 V3.1 \n" + v + " \n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。" + t + "\n\n按确定开始执行。")
   var c = 0;
   var d = 0;
   if(confirm("若有题没有找到答案或答案无效，是否自动填选第一个选项（若选择否将会留空）？ \n确定：是；取消：否。"))
@@ -60,7 +61,7 @@ function k()
         c += 1;
       };
     };
-    alert("自动答题结束，有" + c + "道题没找到，有" + d + "道题返回无效（题库错误）…… \n请您检查一遍后提交（如果发现题库有错误请告诉我；如果脚本太给力还是等二十分钟再提交，答题太快有可能被封号呢）。 \n欢迎您加入我们的群一起讨论并完善题库！ \n我们的QQ群号：204524182");
+    alert("自动答题结束，有" + c + "道题没找到，有" + d + "道题返回无效（题库错误）…… \n请您检查一遍后提交（如果发现题库有错误请告诉我；如果脚本太给力还是等二十分钟再提交，答题太快有可能被封号呢）。" + t);
   }catch(e){
     alert("发生错误，脚本将终止。 \n若您在答题页面运行的这个脚本且您的浏览器是" + r + "或更新的版本，请截图并发给我。 \n错误信息： \n" + e);
   };
