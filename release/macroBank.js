@@ -327,7 +327,7 @@ case "以下哪个不是鬼畜全明星成员？": return "金凯瑞";
 case "游戏《帝国时代2》中,中国的特色兵种是？": return "诸葛弩手";
 case "“钉宫病”是指有关哪位声优的病症？": return "钉宫理惠";
 case "晓美焰的声优是？": return "斋藤千和";
-case "下列哪个人物与《kiss×sis》中「住之江理香」的配音相同？": return "蕾蒂西亚";
+case "下列哪个人物与《kiss×sis》中「住之江理香」的配音相同？": return "蕾蒂西亚（问题儿童都来自异世界？）";
 case "请问被称为名作之壁的是什么动漫？": return "Infinite Stratos";
 case "我国4个直辖市中哪个面积最大？": return "重庆";
 case "《clannad》中藤林杏所养的宠物小野猪的名字是什么？": return "牡丹";
