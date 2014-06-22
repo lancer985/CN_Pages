@@ -1314,7 +1314,7 @@ case "以下哪位角色的发色和其他三位有着明显差异？": return "
 case "《仙剑奇侠传四》中男主角的名字？": return "A.云天河";
 case "麦当劳叔叔的鞋子有几公分长": return "大概4个汉堡那么长";
 case "注明台词“我很好奇！（私、気になります！）": return "冰菓";
-case "DEATH NOTE的漫画家是谁？": return "小畑健&大场鸫";
+case "DEATH NOTE的漫画家是谁？": return "小畑健&apm;大场鸫";
 case "以下哪位动漫角色是\"三无\"属性": return "绫波丽";
 case "MUGEN是以下哪个单词？": return "无限";
 case "以下哪句是LOL中盖伦的台词？": return "人在塔在！";
