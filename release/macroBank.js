@@ -219,7 +219,7 @@ case "命运石之门男主角的网名是": return "凤凰院凶真";
 case "以下哪部游戏中没出现东风谷早苗": return "东方神灵庙";
 case "《CLANNAD》中的冈崎朋也的配音是谁？": return "中村悠一";
 case "《火影忍者》中的第五代火影是谁？": return "千手纲手";
-case "桂木桂马的协助者是谁？": return "艾露西 琉妮";
+case "桂木桂马的协助者是谁？": return "艾露西";
 case "杀手47的后脑勺上有什么": return "条形码";
 case "psycho pass里最美警花是谁?": return "宜野座伸元";
 case "《数码兽大冒险》中第八位被选召的孩子是？": return "八神光/八神嘉儿";
