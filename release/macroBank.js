@@ -1206,7 +1206,7 @@ case "“你说这个谁懂啊？”出自谁的话": return "基拉·大和";
 //题库11（未确认） - 14道 - 仿Chimera君（492335761）提供 - 2014.05.18
 case "以下不是物理气相沉积法（PVD）所用到的技术是？": return "真空蒸发";
 case "罪恶王冠中祈妹子的void是什么？": return "闇之长剑";
-case "Black★Rock Shooter的原画作者是": return "Huke";
+case "Black★Rock Shooter的原画作者是": return "huke";
 case "《北斗神拳》中的南斗凤凰拳传人撒奥萨在MUGEN界被称为？": return "华丽哥";
 case "“今天的风儿好喧嚣”出自哪部作品": return "男子高中生的日常";
 case "“我要成为新世界的卡密！”是谁的台词和人生目标？": return "夜神月";
