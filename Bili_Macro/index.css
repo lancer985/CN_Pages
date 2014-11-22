@@ -1,0 +1,53 @@
+    <style>
+      /*<!--*/
+      /*div*/
+      div
+      {
+        margin-right:10%;
+        margin-left:10%;
+        background-color:#B0B0B0;
+        border-radius: 20px;
+      }
+      div.hySmall, table
+      {
+        margin-right:5%;
+        margin-left:5%;
+      }
+      /*其他*/
+      a, b, h2, h4, input
+      {
+        margin-left:5%;
+        color:#000000;
+      }
+      p.hyEnding
+      {
+        font-size:75%;
+        text-align:center;
+      }
+      input.hyOPBut
+      {
+        width:17%;
+      }
+      /*表格*/
+      table, th, td
+      {
+        border:1px solid black;
+        border-collapse:collapse;
+      }
+      th, td
+      {
+        padding:5px;
+      }
+      th
+      {
+        background-color:#4F4F4F;
+        color:#FFFFFF;
+      }
+      /*无边*/
+      .hyNoMar
+      {
+        margin-right:0px;
+        margin-left:0px;
+      }
+      /*-->*/
+    </style>
