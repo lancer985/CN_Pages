@@ -107,40 +107,38 @@
 
   <p><br></p>
 
-  <div><div class="normal"><div class="mLeft mRight">
+  <div class="normal"><div class="mLeft mRight">
     <br>
-    <h4 class="mLeft">Google Chrome 35：</h4>
-    <a class="mLeft">1.将右面的链接拖拽到书签栏：</a><a href="javascript:var r = 'Google Chrome 35';var o = document.createElement('script');o.setAttribute('charset', 'utf-8');o.setAttribute('src', 'ht' + 'tp://X01X012013.github.io/BiliMacro/release/macroCore.js');document.getElementsByTagName('head')[0].appendChild(o);">Bilibili自动答题脚本</a><br>
-    <a class="mLeft">2.进入到Bilibili的答题页面点击保存的书签并根据弹窗提示使用。</a><br>
+    <h4>Google Chrome 35：</h4>
+    <a>1.将右面的链接拖拽到书签栏：</a><a href="javascript:var r = 'Google Chrome 35';var o = document.createElement('script');o.setAttribute('charset', 'utf-8');o.setAttribute('src', 'ht' + 'tp://X01X012013.github.io/BiliMacro/release/macroCore.js');document.getElementsByTagName('head')[0].appendChild(o);">Bilibili自动答题脚本</a><br>
+    <a>2.进入到Bilibili的答题页面点击保存的书签并根据弹窗提示使用。</a><br>
     <br>
-    <a class="mLeft">由于Google Chrome特别喜欢使用缓存而拒绝从服务器重新读取，我们建议您使用脚本时用“Developer Tools”禁用缓存；操作方法如下：</a><br>
-    <a class="mLeft">1.按“F12”打开“Developer Tools”；</a><br>
-    <a class="mLeft">2.点击“Developer Tools”右上角一个齿轮样的按钮；</a><br>
-    <a class="mLeft">3.在“General”下，勾选第一项（“Disable cache (while DevTools is open)”)。</a><br>
-    <a class="mLeft">完成以上操作后，您开着“Developer Tools”，缓存就会被禁用。</a><br>
-    <a class="mLeft">我们建议您使用答题脚本时开着“Developer Tools”，这样能每次都从云端重新读取最新版本的脚本。</a><br>
+    <a>由于Google Chrome特别喜欢使用缓存而拒绝从服务器重新读取，我们建议您使用脚本时用“Developer Tools”禁用缓存；操作方法如下：</a><br>
+    <a>1.按“F12”打开“Developer Tools”；</a><br>
+    <a>2.点击“Developer Tools”右上角一个齿轮样的按钮；</a><br>
+    <a>3.在“General”下，勾选第一项（“Disable cache (while DevTools is open)”)。</a><br>
+    <a>完成以上操作后，您开着“Developer Tools”，缓存就会被禁用。</a><br>
+    <a>我们建议您使用答题脚本时开着“Developer Tools”，这样能每次都从云端重新读取最新版本的脚本。</a><br>
     <br><br>
   </div></div>
 
   <p><br></p>
 
-  <div><div class="hySmall" id="hyGen"><div class="mLeft mRight">
+  <div class="normal" id="generator"><div class="mLeft mRight">
     <br>
     <h4>题库生成器：</h4>
-    <table style="width:90%" id="hyTable">
+    <table id="genTable">
       <tr>
-        <th style="width:60%">问题</th>
-        <th style="width:40%">答案</th>
+        <th id="genTableQ">问题</th>
+        <th id="genTableA">答案</th>
       </tr>
     </table>
     <br>
-    <div class="hyNoMar" style="text-align:center">
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('add')" value="增加十行" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('del')" value="清空" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="hyTableH('gen')" value="生成" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="if(confirm('您真的要保存输出框中的数据么？ \n这将覆盖Local Storage中原有的数据。')){hyLS('hyBiliMacroSave', 'w', hyID('hyOP').value);alert('已将输出框中的数据保存到Local Storage。');}" value="保存" />
-      <input class="hyNoMar hyOPBut" type="button" onclick="if(confirm('您真的要读取保存的输出数据么？ \n这将覆盖输出框中原有的数据。')){hyID('hyOP').value = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出数据。');}" value="读取" />
-    </div>
+    <input type="button" onclick="hyTableH('add')" value="增加十行" />
+    <input type="button" onclick="hyTableH('del')" value="清空" />
+    <input type="button" onclick="hyTableH('gen')" value="生成" />
+    <input type="button" onclick="if(confirm('您真的要保存输出框中的数据么？ \n这将覆盖Local Storage中原有的数据。')){hyLS('hyBiliMacroSave', 'w', hyID('hyOP').value);alert('已将输出框中的数据保存到Local Storage。');}" value="保存" />
+    <input type="button" onclick="if(confirm('您真的要读取保存的输出数据么？ \n这将覆盖输出框中原有的数据。')){hyID('hyOP').value = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出数据。');}" value="读取" />
     <h4>输出：</h4>
 
 <textarea id="hyOP" rows="15" style="margin-left:5%;width:89%;resize:vertical">
