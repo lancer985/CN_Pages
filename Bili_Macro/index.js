@@ -5,7 +5,7 @@ window.onload = function(){
     for(var i = 0; i < 10; i++ ){
       var buffer = "<tr>";
       for(var ii = 0; ii < 2; ii++ ){
-        buffer += "<th><input type=\"text\" class=\"fullWidth\" id=\"genTextbox" + tableRowCount.toString() + ii.toString() + "\" /></th>";
+        buffer += "<th><input type=\"text\" id=\"genTextbox" + tableRowCount.toString() + ii.toString() + "\" /></th>";
       }
       buffer += "</tr>";
       $("#genTable tr:last").after(buffer);
