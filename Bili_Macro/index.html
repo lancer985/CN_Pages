@@ -135,11 +135,11 @@
     </table>
     <br>
     <div class="bContainer">
-      <input type="button" onclick="hyTableH('add')" value="增加十行" />
-      <input type="button" onclick="hyTableH('del')" value="清空" />
-      <input type="button" onclick="hyTableH('gen')" value="生成" />
-      <input type="button" onclick="if(confirm('您真的要保存输出框中的数据么？ \n这将覆盖Local Storage中原有的数据。')){hyLS('hyBiliMacroSave', 'w', hyID('hyOP').value);alert('已将输出框中的数据保存到Local Storage。');}" value="保存" />
-      <input type="button" onclick="if(confirm('您真的要读取保存的输出数据么？ \n这将覆盖输出框中原有的数据。')){hyID('hyOP').value = hyLS('hyBiliMacroSave', 'r');alert('已从Local Storage读取输出数据。');}" value="读取" />
+      <input type="button" id="bAdd10" value="增加十行" />
+      <input type="button" id="bClear" value="清空" />
+      <input type="button" id="bGen" value="生成" />
+      <input type="button" id="bLSSave" value="保存" />
+      <input type="button" id="bLSLoad" value="读取" />
     </div>
     <h4>输出：</h4>
     <textarea id="genOutput">加载中……</textarea>
