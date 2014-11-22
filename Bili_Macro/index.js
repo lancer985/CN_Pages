@@ -8,7 +8,7 @@ window.onload = function(){
         buffer += "<th><input type=\"text\" class=\"fullWidth\" id=\"genTextbox" + tableRowCount.toString() + ii.toString() + "\" /></th>";
       }
       buffer += "</tr>";
-      $("#genTable tr:last").append(buffer);
+      $("#genTable tr:last").after(buffer);
       tableRowCount += 1;
     };
     return null;
