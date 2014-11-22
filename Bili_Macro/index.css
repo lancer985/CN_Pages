@@ -10,9 +10,6 @@ table, th, td{
 th, td{
   padding: 5px;
 }
-table{
-  width: 100%;
-}
 th#genTableQ{
   width: 60%;
 }
@@ -29,8 +26,11 @@ input[type="button"]{
 }
 /*textarea*/
 textarea{
-  width: 100%;
   height: 300px;
   resize: vertical;
   overflow: auto;
+}
+/*other*/
+.fullWidth{
+  width: 100%;
 }
