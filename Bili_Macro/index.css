@@ -23,6 +23,16 @@ th#genTableA{
   width: 40%;
 }
 /*bottons*/
+div.bContainer{
+  text-align: center;
+}
 input[type="button"]{
   width: 17%;
+}
+/*textarea*/
+textarea{
+  width: 89%;
+  height: 500px;
+  resize: vertical;
+  overflow: auto;
 }
