@@ -28,6 +28,7 @@ div.bContainer{
 }
 input[type="button"]{
   width: 17%;
+  min-width: 20px;
 }
 /*textarea*/
 textarea{
