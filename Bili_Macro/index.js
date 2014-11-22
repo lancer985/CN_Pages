@@ -10,7 +10,7 @@ window.onload = function(){
       buffer += "</tr>";
       $("#genTable tr:last").after(buffer);
       tableRowCount += 1;
-    };
+    }
     return null;
   }
   /*init*/
@@ -32,7 +32,7 @@ window.onload = function(){
     var buffer = "";
     for(var i = 0; i < tableRowCount; i++ ){
       buffer += "case \"" + $("#genTextbox" + i.toString() + "0").val() + "\": return \"" +  $("#genTextbox" + i.toString() + "1").val() + "\";\n";
-    };
+    }
     $("#genOutput").val(buffer).focus();
     return null;
   });
@@ -41,6 +41,7 @@ window.onload = function(){
     if(confirm('您真的要保存输出框中的数据么？ \n这将覆盖已保存的数据。')){
       try{
         localStorage.setItem("BilibiliMacroSave", $("#genOutput").val());
+        alert("保存完成");
       }catch(e){
         alert("保存失败，请将以下错误信息截图并发给我：\n" + e);
       }
