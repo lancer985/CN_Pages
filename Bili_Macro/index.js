@@ -1,99 +1,64 @@
-
-
-var hyRowCount = 0;
-var hyBuffer = "";
-
-hyTableH("add");
-//-----functions-----
-function hyID(hyID)
-{
-  return document.getElementById(hyID);
-};
-
-function hyLS(hyName, hyCMD, hyData)
-{
-  var hyErrMSG = "Local Storage错误: \n";
-  if(hyCMD == "r")
-  {
-    try
-    {
-      return localStorage.getItem(hyName);
-    }catch(hyEX){
-      alert(hyErrMSG + hyEX);
-    };
-  }else{
-    try
-    {
-      localStorage.setItem(hyName, hyData);
-    }catch(hyEX){
-      alert(hyErrMSG + hyEX);
-    };
-  };
-};
-
-var table = function(c)
-{
-  hyTB = "<input type=\"text\" "
-  if(c === "add")
-  {
-    for(var i = 0; i < 10; i += 1)
-    {
-      var hyRow = hyID('hyTable').insertRow(hyID('hyTable').rows.length);
-      var hyTableCell1 = hyRow.insertCell(0);
-      hyTableCell1.innerHTML = hyTB + "id='hyCell" + hyRowCount + "0' />";
-      var hyTableCell2 = hyRow.insertCell(1);
-      hyTableCell2.innerHTML = hyTB + "id='hyCell" + hyRowCount + "1' />";
-      hyRowCount += 1;
-    };
-  }else if(hyCMD == "del"){
-    if(confirm("您真的想重置表格么？"))
-    {
-      while(1 < hyID('hyTable').rows.length)
-      {
-        hyID('hyTable').deleteRow(1);
-      };
-      hyRowCount = 0;
-      hyTableH("add");
-    };
-  }else{
-    for(var i = 0; i < hyRowCount; i += 1)
-    {
-      hyBuffer += "case \"" + hyID('hyCell' + i + "0").value + "\": return \"" + hyID('hyCell' + i + "1").value + "\";\n";
-    };
-    hyID('hyOP').value = hyBuffer;
-    hyBuffer = "";
-    hyID('hyOP').focus();
-  };
-};
+var tableRowCount = 0;
 /*main*/
 window.onload = function(){
   /*init*/
+  $("#genTable").html("<tr><th id=\"genTableQ\">问题</th><th id=\"genTableA\">答案</th></tr>");
   table("add");
   $("#genOutput").val("按“生成”按钮生成，生成的数据将出现在这里。\n生成时会覆盖这里原有的数据。\n\n您可以点击“增加十行”来在表格的末尾插入十行空白表格行。\n您可以点击“清空”来重置表格的所有行。\n\n“保存”可以把这里的数据存到浏览器的Local Storage中；您以后可以点击“读取”按钮读取（正常情况下，若您不手动清理您浏览器的浏览数据，Local Storage中的数据永远不会消失）。");
-  /*add*/
+  /*add 10 rows*/
   $("#bAdd10").onclick(function(){
-    table("add");
+    for(var i = 0; i < 10; i++ ){
+      var buffer = "<tr>";
+      for(var ii = 0; ii < 2; ii++ ){
+        buffer += "<th><input type=\"text\" class=\"fullWidth\" id=\"genTextbox" + tableRowCount.toString() + ii.toString() "\" /></th>";
+      }
+      buffer += "</tr>";
+      $("#genTable tr:last").append(buffer);
+      tableRowCount += 1;
+    };
+    return null;
   });
-  /*del*/
+  /*clear the table*/
   $("#bClear").onclick(function(){
-    table("del");
+    if(confirm("您真的想重置表格么？")){
+      $("#genTable").html("<tr><th id=\"genTableQ\">问题</th><th id=\"genTableA\">答案</th></tr>");
+    }
+    tableRowCount = 0;
+    return null;
   });
+  /*generate*/
   $("#bGen").onclick(function(){
-    table("gen");
+    var buffer = "";
+    for(var i = 0; i < tableRowCount; i++ ){
+      buffer += "case \"" + $("#genTextBox" + i + "0").val() + "\": return \"" +  $("#genTextBox" + i + "1").val() + "\";\n";
+    };
+    $("#genOutput").val(buffer).focus();
+    return null;
   });
+  /*save to local storage*/
   $("#bLSSave").onclick(function(){
-    if(confirm('您真的要保存输出框中的数据么？ \n这将覆盖Local Storage中原有的数据。')){
-      hyLS('hyBiliMacroSave', 'w', hyID('hyOP').value);
-      alert('已将输出框中的数据保存到Local Storage。');
+    if(confirm('您真的要保存输出框中的数据么？ \n这将覆盖已保存的数据。')){
+      try{
+        localStorage.setItem("BilibiliMacroSave", $("#genOutput").val());
+      }catch(e){
+        alert("保存失败，请将以下错误信息截图并发给我：\n" + e);
+      }
     }
   });
+  /*load from local storage*/
   $("#bLSLoad").onclick(function(){
     if(confirm('您真的要读取保存的输出数据么？ \n这将覆盖输出框中原有的数据。')){
-      hyID('hyOP').value = hyLS('hyBiliMacroSave', 'r');
-      alert('已从Local Storage读取输出数据。');
+      try{
+        $("#genOutput").val(localStorage.getItem("BilibiliMacroSave"));
+        alert("读取完成");
+      }catch(e){
+        alert("读取失败，请将以下错误信息截图并发给我：\n" + e);
+      }
     }
   });
+  return null;
 }
+/*unload protection*/
 window.onbeforeunload = function(){
   return "您真的要离开么？";
 }
