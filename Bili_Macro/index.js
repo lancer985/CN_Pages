@@ -31,7 +31,7 @@ window.onload = function(){
   $("#bGen").click(function(){
     var buffer = "";
     for(var i = 0; i < tableRowCount; i++ ){
-      buffer += "case \"" + $("#genTextBox" + i + "0").val() + "\": return \"" +  $("#genTextBox" + i + "1").val() + "\";\n";
+      buffer += "case \"" + $("#genTextbox" + i.toString() + "0").val() + "\": return \"" +  $("#genTextbox" + i.toString() + "1").val() + "\";\n";
     };
     $("#genOutput").val(buffer).focus();
     return null;
