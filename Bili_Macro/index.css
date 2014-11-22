@@ -24,11 +24,14 @@ input[type="button"]{
   width: 17%;
   min-width: 91px;
 }
-/*textarea*/
+/*text field*/
 textarea{
   height: 300px;
   resize: vertical;
   overflow: auto;
+}
+input{
+  width: 98%;
 }
 /*other*/
 .fullWidth{
