@@ -1,9 +1,6 @@
-var v = "题库题数：1434（2014.08.24更新）";
-k();
-function b(q)
-{
-  switch(q)
-  {
+var v = "题库题数：1434（2014.11.22更新）";
+function b(q){
+  switch(q){
 // 143 | 7 + 54 | 7 + 266 | 0 + 26 | 0 + 4 | 0 + 20 | 1 + 19 | 1 + 597 | 0 + 23 | 0 + 18 > 1186
 // 0 + 14 | 0 + 9 | 0 + 225 > 248
 // 1186 + 248 > 1434
@@ -1467,6 +1464,6 @@ case "组长的真名是什么？": return "杉田智和";
 case "《未来日记》的女主角的名字叫": return "我妻由乃";
 case "动画《空之境界》男主角的名字是？": return "黑桐干也";
 case "风音是哪位声优的马甲": return "樱井浩美";
-    default: return "hyErrNotFound";
+default: return undefined;
   };
 };
