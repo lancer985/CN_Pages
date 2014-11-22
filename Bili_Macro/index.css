@@ -1,6 +1,21 @@
+/*text*/
 a.red{
   color: #FF0000;
 }
 a.bold{
   font-weight: bold;
+}
+/*table*/
+table#genTable{
+  width: 90%;
+}
+th#genTableQ{
+  width: 60%;
+}
+th#genTableA{
+  width: 40%;
+}
+/*bottons*/
+input[type="button"]{
+  width: 29%;
 }
