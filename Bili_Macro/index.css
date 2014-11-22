@@ -1,8 +1,8 @@
 /*text*/
-a.red{
+.red{
   color: #FF0000;
 }
-a.bold{
+.bold{
   font-weight: bold;
 }
 /*table*/
