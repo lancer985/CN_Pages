@@ -1,19 +1,19 @@
 var defaultTable = "<tr><th id=\"genTableQ\">问题</th><th id=\"genTableA\">答案</th></tr>";
 var tableRowCount = 0;
+var tableAdd = function(){
+  for(var i = 0; i < 10; i++ ){
+    var buffer = "<tr>";
+    for(var ii = 0; ii < 2; ii++ ){
+      buffer += "<th><input type=\"text\" id=\"genTextbox" + tableRowCount.toString() + ii.toString() + "\" /></th>";
+    }
+    buffer += "</tr>";
+    $("#genTable tr:last").after(buffer);
+    tableRowCount += 1;
+  }
+  return null;
+}
 /*main*/
 window.onload = function(){
-  var tableAdd = function(){
-    for(var i = 0; i < 10; i++ ){
-      var buffer = "<tr>";
-      for(var ii = 0; ii < 2; ii++ ){
-        buffer += "<th><input type=\"text\" id=\"genTextbox" + tableRowCount.toString() + ii.toString() + "\" /></th>";
-      }
-      buffer += "</tr>";
-      $("#genTable tr:last").after(buffer);
-      tableRowCount += 1;
-    }
-    return null;
-  }
   /*init*/
   $("#genTable").html(defaultTable);
   tableAdd();
@@ -26,6 +26,7 @@ window.onload = function(){
       $("#genTable").html(defaultTable);
     }
     tableRowCount = 0;
+    tableAdd();
     return null;
   });
   /*generate*/
