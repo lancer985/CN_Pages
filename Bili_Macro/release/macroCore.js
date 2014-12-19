@@ -12,7 +12,7 @@ if(r == "Google Chrome 39"){
   var g = prompt("请输入您浏览器\"L_0\"物体的innerHTML被\">\"split后第一个选项的index：", "6");
   g = parseInt(g);
   if(g === NaN){
-    g = 7;
+    g = 6;
   }
 }
 var z = function(x, y){
