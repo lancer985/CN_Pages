@@ -19,7 +19,7 @@ var z = function(x, y){
   document.getElementById("rdo" + x + y).checked = "checked";
 }
 p.onload = function(){
-  alert("Bilibili自动答题脚本 V3.2.2（2014.11.22更新）\n" + v + "\n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。" + t + "\n\n按确定开始执行。")
+  alert("Bilibili自动答题脚本 V3.2.2（2014.11.22更新）\n" + v + "\n有可能需要很长时间，若提示脚本或网页长时间无响应请选择等待。" + t + "\n如果您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n\n按确定开始执行。")
   var c = 0;
   var d = 0;
   var f = confirm("若有题没有找到答案或答案无效，是否自动填选第一个选项（若选择否将会留空）？\n确定：是；取消：否。");
