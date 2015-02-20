@@ -1513,3 +1513,4 @@ case "风音是哪位声优的马甲": return "樱井浩美";
 default: return undefined;
   };
 };
+alert("题库加载完成。\n如果您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。");
