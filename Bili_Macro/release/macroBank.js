@@ -1294,7 +1294,7 @@ case "东方Project的创造者，本名叫做什么？": return "ZUN";
 case "世界著名的甲壳虫乐队的Help是哪一年发行的？": return "1965";
 case "以下那部galgame没有被制作成动画？": return "G线上的魔王";
 case "战斗种族指的是哪个国家的人？": return "俄罗斯";
-case "下面哪个是动漫《蔷薇少女》中的人物": return "真红 ";
+case "下面哪个是动漫《蔷薇少女》中的人物": return "真红";
 case "《天堂II》是哪个国家的游戏公司的产品？": return "韩国";
 case "车辚辚,马萧萧_______。后面一句是什么？": return "行人弓箭各在腰";
 case "假面骑士W里面主角翔太郎没有的记忆体是": return "bomb";
