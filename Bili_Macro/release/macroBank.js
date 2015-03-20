@@ -1260,7 +1260,7 @@ case "仰头45°出自哪位动画监督之手": return "新房昭之";
 case "“失去恋人的世界会开出怎样的花”这句歌词出自？": return "恋人射杀之日";
 case "《fate/zreo》中的金闪闪（吉尔伽美什）的配音是谁": return "关智一";
 case "《白熊咖啡厅》里的白熊的CV是谁？": return "樱井孝宏";
-case "The New 52是哪间漫画公司的企划？": return "美国漫画公司DC漫画在2011年推出的新超级英雄漫画出版企划";
+case "The New 52是哪间漫画公司的企划？": return "Detective Comics";
 case "11区这一称谓源自": return "叛逆的鲁鲁修";
 case "《花牌情缘》里竞技歌牌比赛时使用的是《小倉百人一首》中的多少张歌牌": return "100";
 case "三国杀中五子良将中被称为装备牌的是哪一位": return "于禁";
