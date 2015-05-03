@@ -66,5 +66,5 @@ window.onload = function(){
 }
 /*unload protection*/
 window.onbeforeunload = function(){
-  return "您真的要离开么？";
+  return "若离开网页，题库生成器中的未保存的数据将会丢失，您真的要离开么？";
 }
