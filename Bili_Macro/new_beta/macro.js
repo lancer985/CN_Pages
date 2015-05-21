@@ -27,7 +27,7 @@ for(var i = 1; i <= 20; i++){
         }
         //填上答案
         if(rightA === a[iii]){
-            $(".examLi")[i].find("li:contains('" + rightA + "')").addClass("currSolution");
+            $(".examLi").eq(i).find("li:contains('" + rightA + "')").addClass("currSolution");
             break;
         }
     }
