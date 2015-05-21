@@ -1,1 +1,0 @@
-javascript: $("<script>").attr("src", "//X01X012013.github.io/CN_Pages/Bili_Macro/new_beta/macro.js").attr("charset", "utf-8").appendTo("head");
