@@ -12,7 +12,7 @@ for(var i = 1; i <= 20; i++){
     var q = thisQ[64].substring(0, thisQ[64].length - 2); //问题 index 64
     var rightA = getAns(q); //获取答案
     if(rightA !== undefined){
-        $(".examLi").eq(i).find("li:contains('" + rightA + "')").addClass("currSolution"); //这行应该是对的
+        $(".examLi").eq(i).find("li:contains('" + rightA + "')").addClass("currSolution");
     }else{
         counter += 1;
     }
