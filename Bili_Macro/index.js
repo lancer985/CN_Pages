@@ -17,7 +17,7 @@ window.onload = function(){
   /*init*/
   $("#genTable").html(defaultTable);
   tableAdd();
-  $("#genOutput").val("加载完成。");
+  $("#genOutput").val("加载完成！可以开始制作题库啦！");
   /*add 10 rows*/
   $("#bAdd10").click(tableAdd);
   /*clear the table*/
