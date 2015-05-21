@@ -18,6 +18,9 @@ for(var i = 1; i <= 20; i++){
 //题库函数 - 制作中
 function getAns (q){
 
+//仅测试
+return "A.";
+
 switch(q){
 case "下列哪一条不是剧透弹幕？": return "我非常喜欢这个角色";
 case "以下哪种弹幕不会被禁言？": return "和谐吐槽";
