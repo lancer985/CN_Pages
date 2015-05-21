@@ -1,6 +1,6 @@
 try{ //错误提示
 //欢迎
-alert("Bilibili弹幕礼仪题答题脚本，请舔屏幕继续。");
+alert("Bilibili弹幕礼仪题答题脚本V1.0（2015.05.20更新）题库数量2（2015.05.20更新），请舔屏幕继续。");
 //核心
 var allQ = [];
 $(".examLi").each(function(){
@@ -17,7 +17,7 @@ for(var i = 1; i <= 20; i++){
         counter += 1;
     }
 }
-alert("答题完成，有" + counter  +"道题没有找到，请亲自填写。")
+alert("答题完成，有" + counter  +"道题没有找到，请亲自填写。若提示数量和实际没填的数量不符，请复制整个网页并发给我。")
 //题库函数
 function getAns (q){
 switch(q){
