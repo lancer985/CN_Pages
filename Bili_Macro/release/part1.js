@@ -7,7 +7,7 @@ V1.1 2015.05.21
 */
 try{ //错误处理
 //欢迎和运行确认
-if(prompt("Bilibili晋级考试 弹幕礼仪部分 答题脚本 V1.1（2015.05.21更新）\n点击确定运行。\n我们的网站（包含脚本使用说明，使用本脚本前请务必阅读说明）：", "http://x01x012013.github.io/CN_Pages/Bili_Macro/") !== null){
+if(prompt("Bilibili晋级考试 弹幕礼仪部分 答题脚本 V1.1（2015.05.21更新）\n点击确定运行（点击取消则不会运行）。\n我们的网站（包含脚本使用说明，使用本脚本前请务必阅读）：", "http://x01x012013.github.io/CN_Pages/Bili_Macro/") !== null){
 alert("题库题数：2（2015.05.20更新）\n若您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n点击确定继续。");
 //核心
 var allQ = [];
@@ -17,12 +17,17 @@ $(".examLi").each(function(){
 var counter = 0;
 for(var i = 1; i <= 20; i++){
     var thisQ = allQ[i].split(" ");
-    var q = thisQ[64].substring(0, thisQ[64].length - 2); //问题 index 64
+    var q = thisQ[64].substring(0, thisQ[64].length - 2); //问题
+    var a = []; //答案
+    for(var ii = 112; ii <= 172; ii += 20){
+        a.push(thisQ[ii].substring(1, thisQ[ii].length - 2));
+    }
     var rightA = getAns(q); //获取答案
-    if(rightA !== undefined){
+    if(a.indexOf(rightA) > -1){
         $(".examLi").eq(i).find("li:contains('" + rightA + "')").addClass("currSolution");
     }else{
         counter += 1;
+        alert("题库错误！\n问题：\"" + q + "\"\n返回的答案：\"" + rightA + "\"\n捕获的答案列表：" + a);
     }
 }
 alert("答题完成，有" + counter  +"道题没有找到。")
@@ -31,8 +36,8 @@ function getAns (q){
 // 2 + 0 = 2
 switch(q){
 //群主提供 2题 2015.05.20
-case "下列哪一条不是剧透弹幕？": return "我非常喜欢这个角色";
-case "以下哪种弹幕不会被禁言？": return "和谐吐槽";
+case "下列哪一条不是剧透弹幕？": return ".我非常喜欢这个角色";
+case "以下哪种弹幕不会被禁言？": return ".和谐吐槽";
 //没找到的话返回undefined
 default: return undefined;
 }}
