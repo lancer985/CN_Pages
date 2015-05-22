@@ -24,9 +24,9 @@ window.onload = function(){
   $("#bClear").click(function(){
     if(confirm("您真的想重置表格么？")){
       $("#genTable").html(defaultTable);
+      tableRowCount = 0;
+      tableAdd();
     }
-    tableRowCount = 0;
-    tableAdd();
     return null;
   });
   /*generate*/
