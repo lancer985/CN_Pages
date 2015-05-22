@@ -17,10 +17,10 @@ $(".examLi").each(function(){
 var counter = 0;
 for(var i = 1; i <= 20; i++){
     var thisQ = allQ[i].split(" ");
-    var q = thisQ[64].substring(0, thisQ[64].length - 2); //问题
+    var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
     var a = []; //答案
     for(var ii = 112; ii <= 172; ii += 20){
-        a.push(thisQ[ii].substring(1, thisQ[ii].length - 2));
+        a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
     var rightA = getAns(q); //获取答案
     if(a.indexOf(rightA) > -1){
