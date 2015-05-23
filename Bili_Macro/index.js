@@ -13,7 +13,7 @@ var tableAdd = function(){
   return null;
 }
 var scroll = function(target){
-  $("html,body").animate({scrollTop: $("#" + id).offset().top}, "fast");
+  $("html,body").animate({scrollTop: $("#" + target).offset().top}, "fast");
 }
 /*main*/
 window.onload = function(){
