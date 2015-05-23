@@ -39,6 +39,7 @@ window.onload = function(){
     for(var i = 0; i < tableRowCount; i++ ){
       buffer += "case \"" + $("#genTextbox" + i.toString() + "0").val() + "\": return \"" +  $("#genTextbox" + i.toString() + "1").val() + "\";\n";
     }
+    $("#genOutput").val(buffer);
     scroll("outputHeader");
     return null;
   });
