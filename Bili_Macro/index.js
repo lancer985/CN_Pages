@@ -67,15 +67,18 @@ window.onload = function(){
     return null;
   });
   /*scroll*/
-  $("#scroll_part1Help").click(function(){
+  $("#scroll_part1Help").click(function(e){
+    e.preventDefault();
     scroll("part1Help");
     return null;
   });
-  $("#scroll_generator").click(function(){
+  $("#scroll_generator").click(function(e){
+    e.preventDefault();
     scroll("generator");
     return null;
   });
-  $("#scroll_comments").click(function(){
+  $("#scroll_comments").click(function(e){
+    e.preventDefault();
     scroll("comments");
     return null;
   });
