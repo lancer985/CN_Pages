@@ -12,6 +12,9 @@ var tableAdd = function(){
   }
   return null;
 }
+var scroll = function(target){
+  $("html,body").animate({scrollTop: $("#" + id).offset().top}, "fast");
+}
 /*main*/
 window.onload = function(){
   /*init*/
@@ -26,6 +29,7 @@ window.onload = function(){
       $("#genTable").html(defaultTable);
       tableRowCount = 0;
       tableAdd();
+      scroll("generator");
     }
     return null;
   });
@@ -60,6 +64,19 @@ window.onload = function(){
         alert("读取失败，请将以下错误信息截图并发给我：\n" + e);
       }
     }
+    return null;
+  });
+  /*scroll*/
+  $("#scroll_part1Help").click(function(){
+    scroll("part1Help");
+    return null;
+  });
+  $("#scroll_generator").click(function(){
+    scroll("generator");
+    return null;
+  });
+  $("#scroll_comments").click(function(){
+    scroll("comments");
     return null;
   });
   return null;
