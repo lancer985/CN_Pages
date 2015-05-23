@@ -54,10 +54,10 @@ case "下列哪一条符合弹幕礼仪？": return ".合适的吐槽弹幕";
 //
 default: return undefined;
 }}//结束switch和题库函数
+}//结束运行确认
 }else{//URL检查
     alert("请在正确的页面上运行脚本！");
 }
-}//结束运行确认
 }catch(e){ //系统错误处理
     alert("系统错误！\n错误信息：\n" + e);
 }
