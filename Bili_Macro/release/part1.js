@@ -21,11 +21,12 @@ var counter = 0;
 for(var i = 1; i <= 20; i++){
     var thisQ = allQ[i].split(" ");
     var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
-    var a = []; //答案
+    //答案
+    var a = [];
     for(var ii = 112; ii <= 172; ii += 20){
         a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
-    var rightA = getAns(q); //获取答案
+    var rightA = getAns(q); //获取正确答案
     if(a.indexOf(rightA) > -1){
         $(".examLi").eq(i) //找到正确的题
             .find("li").eq(a.indexOf(rightA)) //找到正确的选项
@@ -53,9 +54,9 @@ case "当观看过程中有发现有恶意黑自己喜欢角色的弹幕时应�
 case "下列哪一条符合弹幕礼仪？": return ".合适的吐槽弹幕";
 //
 default: return undefined;
-}}//结束switch和题库函数
-}//结束运行确认
-}else{//URL检查
+}} //结束switch和题库函数
+} //结束运行确认
+}else{ //URL检查
     alert("请在正确的页面上运行脚本！");
 }
 }catch(e){ //系统错误处理
